@@ -1,9 +1,17 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+activate :scss_lint
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+
+# External pipeline
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: ".tmp/dist",
+  latency: 1
 
 # Pretty URLs
 activate :directory_indexes
@@ -59,6 +67,10 @@ configure :development do
 end
 
 configure :build do
+
+  # "Ignore" JS so webpack has full control.
+  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'all' }
+
   config[:host] = "https://bastienrobert.fr"
 
   activate :minify_html
@@ -76,4 +88,22 @@ configure :build do
       {:user_agent => '*', :allow => %w(/)}
     ],
     :sitemap => config[:host] + "/sitemap.xml"
+end
+
+configure :server do
+  ready do
+    files.on_change :source do |changed|
+      changed_js = changed.select do |f|
+        f[:full_path].extname === '.js' && !f[:full_path].to_s.include?('.tmp')
+      end
+
+      if changed_js.length > 0
+        puts "== Linting Javascript"
+
+        changed_js.each do |file|
+          puts `./node_modules/eslint/bin/eslint.js #{file[:full_path]}`
+        end
+      end
+    end
+  end
 end

@@ -4,7 +4,9 @@
   "description": "",
   "main": "./source/javascripts/all.js",
   "scripts": {
-    "test": "./bin/lint"
+    "test": "./bin/lint",
+    "dependencies": "npm i critical svgo -g",
+    "build": "npm run dependencies && middleman build"
   },
   "repository": {
     "type": "git",

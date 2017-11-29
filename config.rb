@@ -1,7 +1,5 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-activate :scss_lint
-
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -64,12 +62,14 @@ Dir['helpers/*'].each(&method(:load))
 configure :development do
   config[:host] = "http://localhost:4567"
   activate :livereload
+  activate :scss_lint
 end
 
 configure :build do
 
   # "Ignore" JS so webpack has full control.
   ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'all' }
+  activate :relative_assets
 
   config[:host] = "https://bastienrobert.fr"
 
@@ -78,7 +78,7 @@ configure :build do
   activate :minify_javascript
   activate :imageoptim
   activate :gzip
-  activate :critical, :binary => '/usr/local/bin/critical'
+  activate :critical
 
   # SEO
   activate :sitemap, :gzip => false, :hostname => config[:host]

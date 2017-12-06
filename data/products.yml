@@ -1,0 +1,32 @@
+- name: Premier produit
+  id: 1
+  price:
+    usd: 20
+    eur: 22
+  max_quantity: 10
+  path: first-product
+  image: https://via.placeholder.com/200x200
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- name: Second produit
+  id: 2
+  price:
+    usd: 12
+    eur: 14
+  max_quantity: 10
+  path: second-product
+  image: https://via.placeholder.com/200x200
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  en:
+    name: Second product
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. EN.
+
+- name: Troisieme produit
+  id: 3
+  price:
+    usd: 14
+    eur: 16
+  max_quantity: 10
+  path: third-product
+  image: https://via.placeholder.com/200x200
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

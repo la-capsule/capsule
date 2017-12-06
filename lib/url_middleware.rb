@@ -13,7 +13,7 @@ module URLHelper
       title_translate(lang)
     end
   end
-  
+
   def path_translate(lang)
     begin
       current_page.data.dir.map { |dir| t("paths.#{dir}", locale: lang, :default => dir) + '/'}.join('')
@@ -26,4 +26,11 @@ module URLHelper
     t("paths.#{current_page.data.title}", locale: lang, :default => current_page.data.title)
   end
 
+  def only_locale_depends(path)
+    if locale == I18n.default_locale
+      return path
+    else
+      return '/' + locale.to_s + '/' + path
+    end
+  end
 end

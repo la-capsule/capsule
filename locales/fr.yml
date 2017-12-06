@@ -1,14 +1,25 @@
 ---
 fr:
+  home-link: "Accueil"
   hello: "Bonjour"
   about: "A propos"
 
   titles:
     homepage: "Accueil"
     about: "A propos"
+    catalog: "Catalogue"
+    product: "Produit"
+    creator: "Créateur de la semaine"
+
+  creator:
+    name: "Nom du Créateur"
+
+  snipcart:
+    add_to_cart: "Ajouter au panier"
 
   paths:
     # Directories
 
     # Paths
     about: "a-propos"
+    catalog: "catalogue"

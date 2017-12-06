@@ -4,6 +4,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Dotenv
+activate :dotenv
+
 # External pipeline
 activate :external_pipeline,
   name: :webpack,
@@ -47,14 +50,17 @@ Dir["helpers/*.rb"].each {|file| require file }
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 helpers ApplicationHelper
+helpers SnipcartHelper
 
 # Middleman i18n can't convert page URL to another language. This is the solution.
 require "lib/url_middleware"
 helpers URLHelper
 
-# Middleman fails to reload on helpers edit. This is the solution.
-Dir['helpers/*'].each(&method(:load))
-
+# Using a proxy for link to product details page
+data.products.each do |product|
+  proxy "catalogue/#{product.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :fr, :layout => "layout", :ignore => true
+  proxy "en/catalog/#{product.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :en, :layout => "layout", :ignore => true
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -63,6 +69,7 @@ configure :development do
   config[:host] = "http://localhost:4567"
   activate :livereload
   activate :scss_lint
+  Dir['helpers/*'].each(&method(:load))
 end
 
 configure :build do

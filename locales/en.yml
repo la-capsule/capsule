@@ -1,14 +1,25 @@
 ---
 en:
+  home-link: "Home"
   hello: "Hello"
   about: "About"
 
   titles:
     homepage: "Homepage"
     about: "About"
+    catalog: "Catalog"
+    product: "Product"
+    creator: "Creator of the week"
+
+  creator:
+    name: "Creator name"
+
+  snipcart:
+    add_to_cart: "Add to cart"
 
   paths:
     # Directories
 
     # Paths
     about: "about"
+    catalog: "catalog"

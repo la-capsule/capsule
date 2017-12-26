@@ -1,10 +1,10 @@
 ---
-title: catalog
+slug: catalog
 ---
 
 <% data.products.each_with_index do |b, index| %>
-  <% link_to b.path do %>
-    <%= b.name %>
+  <% link_to b[locale].path do %>
+    <%= b[locale].name %>
     <%= number_to_currency(b.price.eur, :unit => "€") %>
   <% end %>
   <%= snipcart_button b, t("snipcart.add_to_cart") %>

@@ -1,8 +1,15 @@
 ---
-title: product
+dir:
+  - catalog
+dynamic:
+  enable: true
+  data: product
+  name: name
+  slug: path
 ---
 
-<%= product_definition(product, 'name') %><br>
+<%= product[locale].name %><br>
 <%= number_to_currency(product.price.eur, :unit => "€") %><br>
-<%= product_definition(product, 'description') %><br>
+<%= product[locale].description %><br>
+<%= image_tag(product.image) %><br>
 <%= snipcart_button product, t("snipcart.add_to_cart") %>

@@ -5,9 +5,9 @@ module SnipcartHelper
       :"class" => "snipcart-add-item",
       :"data-item-id" => p.id,
       :"data-item-price" => p.price.to_json,
-      :"data-item-name" => p.name,
+      :"data-item-name" => p[locale].name,
       :"data-item-max-quantity" => p.max_quantity,
-      :"data-item-url" => p.path,
+      :"data-item-url" => p[locale].path,
       :"data-item-image" => p.image
     }
 

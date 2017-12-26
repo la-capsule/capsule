@@ -20,6 +20,10 @@ activate :directory_indexes
 activate :i18n, :mount_at_root => :fr
 # Using asset helpers
 activate :asset_hash
+# Middleman i18n can't convert page URL to another language. This is the solution.
+activate :transpath
+
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -52,14 +56,13 @@ Dir["helpers/*.rb"].each {|file| require file }
 helpers ApplicationHelper
 helpers SnipcartHelper
 
-# Middleman i18n can't convert page URL to another language. This is the solution.
-require "lib/url_middleware"
-helpers URLHelper
+# Middleman fails to reload on helpers edit. This is the solution.
+Dir['helpers/*'].each(&method(:load))
 
 # Using a proxy for link to product details page
 data.products.each do |product|
-  proxy "catalogue/#{product.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :fr, :layout => "layout", :ignore => true
-  proxy "en/catalog/#{product.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :en, :layout => "layout", :ignore => true
+  proxy "catalogue/#{product.fr.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :fr, :layout => "layout", :ignore => true, :data => { :slug => product.fr.path }
+  proxy "en/catalog/#{product.en.path}/index.html", "templates/product.html", :locals => { :product => product }, :locale => :en, :layout => "layout", :ignore => true, :data => { :slug => product.en.path }
 end
 
 # Build-specific configuration

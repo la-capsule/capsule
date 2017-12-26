@@ -1,25 +1,41 @@
 ---
 en:
-  home-link: "Home"
-  hello: "Hello"
-  about: "About"
-
+  ## ------------------
+  # Root translations
+  ## ------------------
   titles:
     homepage: "Homepage"
     about: "About"
     catalog: "Catalog"
-    product: "Product"
     creator: "Creator of the week"
+
+  paths:
+    # Paths
+    about: "about"
+    catalog: "catalog"
+
+  ## ------------------
+  # Header and footer
+  ## ------------------
+  nav:
+    home: "Homepage"
+
+  ## ------------------
+  # Page translations
+  ## ------------------
+
+  homepage:
+    h1: "Hello"
+
+  about:
+    h1: "About"
 
   creator:
     name: "Creator name"
 
+  ## ------------------
+  # Shop translations
+  ## ------------------
+
   snipcart:
     add_to_cart: "Add to cart"
-
-  paths:
-    # Directories
-
-    # Paths
-    about: "about"
-    catalog: "catalog"

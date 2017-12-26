@@ -32,7 +32,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= javascript_include_tag  "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
         :id => "snipcart",
-        :"data-api-key" => ENV["SNIPCART_API_KEY"] %>
+        "data-api-key" => ENV["SNIPCART_API_KEY"] %>
   </head>
   <body>
     <%= partial 'layouts/partials/header' %>

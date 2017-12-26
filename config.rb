@@ -81,7 +81,7 @@ configure :build do
   ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'all' }
   activate :relative_assets
 
-  config[:host] = "https://bastienrobert.fr"
+  config[:host] = ENV["HOST"]
 
   activate :minify_html
   activate :minify_css

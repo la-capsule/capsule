@@ -1,12 +1,6 @@
-import 'babel-polyfill';
-
-const Vue = require('vue');
-const App = require('./components/App.vue');
-
+import Vue from 'vue/dist/vue.js'
+import App from './components/App.vue'
 
 new Vue({
-  el: 'main',
-  components: {
-    App
-  }
-});
+  render: h => h(App)
+}).$mount('#app')

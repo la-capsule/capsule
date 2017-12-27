@@ -15,7 +15,8 @@
   "author": "Bastien Robert",
   "homepage": "https://github.com/ptut2018/eshop#readme",
   "dependencies": {
-    "vue": "^1.0.0"
+    "vue": "^2.2.4",
+    "vue-resource": "^1.3.5"
   },
   "devDependencies": {
     "babel": "^6.1.18",

@@ -11,7 +11,7 @@ module SnipcartHelper
     args = {
       "class" => "snipcart-add-item",
       "data-item-id" => p.id,
-      "data-item-price" => p.price.to_json,
+      "data-item-price" => p.price.to_json.to_s,
       "data-item-name" => p[locale].name,
       "data-item-max-quantity" => p.max_quantity,
       "data-item-url" => snipcart_product_url(p),

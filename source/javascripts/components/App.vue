@@ -1,12 +1,19 @@
 <template>
-  {{msg}}
+  <div id="app">
+    {{msg}}
+  </div>
 </template>
 
 <script>
 export default {
+  data: function () {
+    return {
+      wut: "HALO (here's a Vue test)"
+    }
+  },
   computed: {
     msg () {
-      return "HALO"
+      return this.wut
     }
   }
 }

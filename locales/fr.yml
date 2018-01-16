@@ -40,3 +40,5 @@ fr:
 
   snipcart:
     add_to_cart: "Ajouter au panier"
+    sizes: "Tailles"
+    colors: "Couleurs"

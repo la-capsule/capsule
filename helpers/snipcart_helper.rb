@@ -18,9 +18,27 @@ module SnipcartHelper
       "data-item-image" => p.image
     }
 
+    if (p.colors.inStocks)
+      colors = snipcart_array_it(p.colors.inStocks)
+      args["data-item-custom1-name"] = t('snipcart.colors')
+      args["data-item-custom1-options"] = colors
+      args["data-item-custom1-value"] = '#696969'
+    end
+
+    if (p.sizes.inStocks)
+      sizes = snipcart_array_it(p.sizes.inStocks)
+      args["data-item-custom2-name"] = t('snipcart.sizes')
+      args["data-item-custom2-options"] = sizes
+      args["data-item-custom2-value"] = 'S'
+    end
+
     content_tag :button, args do
       text
     end
+  end
+
+  def snipcart_array_it(a)
+    a.to_s.tr('[]', '').tr(',', '|').tr('""', '').tr(' ', '')
   end
 
 end

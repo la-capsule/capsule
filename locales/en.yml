@@ -39,3 +39,5 @@ en:
 
   snipcart:
     add_to_cart: "Add to cart"
+    sizes: "Sizes"
+    colors: "Colors"

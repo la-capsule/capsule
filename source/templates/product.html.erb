@@ -23,6 +23,18 @@ dynamic:
 <% end %>
 
 <br>
+<br>
+<br>
+
+<span class="component__product-how-many">
+  <button class="less"></button>
+  <span>1</span>
+  <button class="more"></button>
+</span>
+
+<br>
+<br>
+<br>
 <select name="size" class="component__product-select">
   <option value="" selected disabled>Size</option>
   <% product.sizes.inStocks&.each do |size| %>

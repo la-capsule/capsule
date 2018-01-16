@@ -1,6 +1,10 @@
+@import 'misc/reset';
 @import 'partials/index';
 @import 'components/index';
 @import 'snipcart/index';
+
+
+// Here is some MOMENTANÉ style
 
 body {
   color: #333;
@@ -10,6 +14,10 @@ body {
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   padding: 18vh 1rem;
   text-align: center;
+}
+
+.component__product-how-many {
+  margin: 0 auto;
 }
 
 a {

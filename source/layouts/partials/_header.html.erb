@@ -1,10 +1,11 @@
 <header>
-  <%= link_to t("nav.home"), uri_root_path %>
+  <% link_to uri_root_path do %>
+    <%= image_tag('logo.svg', id: "logo") %>
+  <% end %>
   <div class="snipcart-summary">
     <a href="#" class="snipcart-checkout">
-      <span>
-        View cart (<span class="snipcart-total-items">0</span>)
-      </span>
+      <span class="snipcart-checkout-icon"></span>
+      <span class="snipcart-total-items">0</span>
     </a>
   </div>
 </header>

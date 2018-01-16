@@ -3,6 +3,15 @@
     usd: 20
     eur: 22
   max_quantity: 10
+  colors:
+    inStocks:
+      - '#696969'
+      - '#93D18A'
+      - '#E68B8B'
+  sizes:
+    inStocks:
+      - S
+      - M
   image: https://via.placeholder.com/200x200
   en:
     name: First product

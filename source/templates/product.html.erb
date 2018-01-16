@@ -12,4 +12,24 @@ dynamic:
 <%= number_to_currency(product.price.eur, :unit => "€") %><br>
 <%= product[locale].description %><br>
 <%= image_tag(product.image) %><br>
+
+<!-- ADD CONDITIONS IF COLOR / SIZE DEFINED -->
+
+<% product.colors.inStocks&.each do |color| %>
+  <input type="radio" name="color" value="<%= color %>" data-color="<%= color %>" class="component__product-radio">
+<% end %>
+<% product.colors.outOfStocks&.each do |color| %>
+  <input type="radio" name="color" value="<%= color %>" data-color="<%= color %>" class="component__product-radio" disabled>
+<% end %>
+
+<br>
+<select name="size" class="component__product-select">
+  <option value="" selected disabled>Size</option>
+  <% product.sizes.inStocks&.each do |size| %>
+    <option value="<%= size %>"><%= size %></option>
+  <% end %>
+  <% product.sizes.outOfStocks&.each do |size| %>
+    <option value="<%= size %>" disabled><%= size %></option>
+  <% end %>
+</select><br>
 <%= snipcart_button product, t("snipcart.add_to_cart") %>

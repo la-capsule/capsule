@@ -9,7 +9,7 @@ module SnipcartHelper
 
   def snipcart_button (p, text)
     args = {
-      "class" => "snipcart-add-item",
+      "class" => "snipcart-add-item snipcart__buy-button",
       "data-item-id" => p.id,
       "data-item-price" => p.price.to_json.to_s,
       "data-item-name" => p[locale].name,

@@ -1,0 +1,14 @@
+---
+slug: order
+---
+<h1>
+  <%= t("homepage.h1") %>
+</h1>
+
+<% form_tag 'http://capsule-admin.herokuapp.com/orders/', id: 'follow-order' do %>
+  <%= label_tag :id %>
+  <%= text_field_tag :id, placeholder: 'CAPS-####' %>
+  <%= submit_tag %>
+<% end %>
+
+<div id="follow-order-reponse"></div>

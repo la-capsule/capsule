@@ -8,11 +8,13 @@ en:
     about: "About"
     catalog: "Catalog"
     creator: "Creator of the week"
+    order: "Order following"
 
   paths:
     # Paths
     about: "about"
     catalog: "catalog"
+    order: 'order'
 
   ## ------------------
   # Header and footer

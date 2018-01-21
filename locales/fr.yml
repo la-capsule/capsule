@@ -8,11 +8,13 @@ fr:
     about: "A propos"
     catalog: "Catalogue"
     creator: "Createur de la semaine"
+    order: "Suivre ma commande"
 
   paths:
     # Paths
     about: "a-propos"
     catalog: "catalogue"
+    order: "commande"
 
   ## ------------------
   # Header and footer

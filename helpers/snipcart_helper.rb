@@ -18,18 +18,11 @@ module SnipcartHelper
       "data-item-image" => p.image
     }
 
-    if p.colors.inStocks
-      colors = snipcart_array_it(p.colors.inStocks)
-      args["data-item-custom1-name"] = t('snipcart.colors')
-      args["data-item-custom1-options"] = colors
-      args["data-item-custom1-value"] = '#696969'
-    end
-
-    if p.sizes.inStocks
-      sizes = snipcart_array_it(p.sizes.inStocks)
-      args["data-item-custom2-name"] = t('snipcart.sizes')
-      args["data-item-custom2-options"] = sizes
-      args["data-item-custom2-value"] = 'S'
+    p.options.each_with_index do |option, i|
+      data = snipcart_array_it(option[1].inStocks)
+      args["data-item-custom#{i}-name"] = t("snipcart.#{option[0]}")
+      args["data-item-custom#{i}-options"] = data
+      args["data-item-custom#{i}-value"] = ''
     end
 
     content_tag :button, args do

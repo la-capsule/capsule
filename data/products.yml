@@ -3,20 +3,21 @@
     usd: 20
     eur: 22
   max_quantity: 10
-  colors:
-    inStocks:
-      grey: '#696969'
-      green: '#93D18A'
-      red: '#E68B8B'
-    outOfStocks:
-      blue: 'blue'
-  sizes:
-    inStocks:
-      - S
-      - M
-    outOfStocks:
-      - L
-      - XL
+  options:
+    colors:
+      inStocks:
+        grey: '#696969'
+        green: '#93D18A'
+        red: '#E68B8B'
+      outOfStocks:
+        blue: 'blue'
+    sizes:
+      inStocks:
+        - S
+        - M
+      outOfStocks:
+        - L
+        - XL
   image: https://via.placeholder.com/200x200
   en:
     name: First product

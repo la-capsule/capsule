@@ -15,10 +15,10 @@ dynamic:
 
 <!-- ADD CONDITIONS IF COLOR / SIZE DEFINED -->
 
-<% product.colors.inStocks&.each do |k, color| %>
+<% product.options.colors.inStocks&.each do |k, color| %>
   <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
 <% end %>
-<% product.colors.outOfStocks&.each do |k, color| %>
+<% product.options.colors.outOfStocks&.each do |k, color| %>
   <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
 <% end %>
 
@@ -37,10 +37,10 @@ dynamic:
 <br>
 <select name="size" class="component__product-select">
   <option value="" selected disabled>Size</option>
-  <% product.sizes.inStocks.each do |size| %>
+  <% product.options.sizes.inStocks.each do |size| %>
     <option value="<%= size %>"><%= size %></option>
   <% end %>
-  <% product.sizes.outOfStocks.each do |size| %>
+  <% product.options.sizes.outOfStocks.each do |size| %>
     <option value="<%= size %>" disabled><%= size %></option>
   <% end %>
 </select><br>

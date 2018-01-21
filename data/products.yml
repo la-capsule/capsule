@@ -5,11 +5,11 @@
   max_quantity: 10
   colors:
     inStocks:
-      - '#696969'
-      - '#93D18A'
-      - '#E68B8B'
+      grey: '#696969'
+      green: '#93D18A'
+      red: '#E68B8B'
     outOfStocks:
-      - 'blue'
+      blue: 'blue'
   sizes:
     inStocks:
       - S

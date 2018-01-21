@@ -18,14 +18,14 @@ module SnipcartHelper
       "data-item-image" => p.image
     }
 
-    if (p.colors.inStocks)
+    if p.colors.inStocks
       colors = snipcart_array_it(p.colors.inStocks)
       args["data-item-custom1-name"] = t('snipcart.colors')
       args["data-item-custom1-options"] = colors
       args["data-item-custom1-value"] = '#696969'
     end
 
-    if (p.sizes.inStocks)
+    if p.sizes.inStocks
       sizes = snipcart_array_it(p.sizes.inStocks)
       args["data-item-custom2-name"] = t('snipcart.sizes')
       args["data-item-custom2-options"] = sizes
@@ -38,7 +38,25 @@ module SnipcartHelper
   end
 
   def snipcart_array_it(a)
-    a.to_s.tr('[]', '').tr(',', '|').tr('""', '').tr(' ', '')
+    s = ""
+    if a.is_a?(Hash)
+      a.each_with_index do |(k, v), i|
+        if i == a.length - 1
+          s += k
+        else
+          s += (k + "|")
+        end
+      end
+    else
+      a.each_with_index do |v, i|
+        if i == a.length - 1
+          s += v
+        else
+          s += (v + "|")
+        end
+      end
+    end
+    return s
   end
 
 end

@@ -5,7 +5,7 @@ class Product {
     this.product = document.getElementById('product')
     if (this.product != null) {
       this.productId = this.product.dataset.itemId
-      this.buyButton = product.querySelector('#buy-' + this.productId)
+      this.buyButton = this.product.querySelector('#buy-' + this.productId)
       this.buyButtonData = this.buyButton.dataset
       this.pickers = this.product.querySelectorAll('form.option-picker')
       this.quantity = this.product.querySelectorAll('form.quantity-picker')

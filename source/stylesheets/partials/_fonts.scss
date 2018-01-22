@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'HKConcentrate';
+  src: font-url('HKConcentrate/HKConcentrate-Regular.eot');
+  src: font-url('HKConcentrate/HKConcentrate-Regular.eot?#iefix') format('embedded-opentype'),
+       font-url('HKConcentrate/HKConcentrate-Regular.woff') format('woff'),
+       font-url('HKConcentrate/HKConcentrate-Regular.woff2') format('woff2'),
+       font-url('HKConcentrate/HKConcentrate-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKConcentrate';
+  src: font-url('HKConcentrate/HKConcentrate-Bold.eot');
+  src: font-url('HKConcentrate/HKConcentrate-Bold.eot?#iefix') format('embedded-opentype'),
+       font-url('HKConcentrate/HKConcentrate-Bold.woff') format('woff'),
+       font-url('HKConcentrate/HKConcentrate-Bold.woff2') format('woff2'),
+       font-url('HKConcentrate/HKConcentrate-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKConcentrate';
+  src: font-url('HKConcentrate/HKConcentrate-Heavy.eot');
+  src: font-url('HKConcentrate/HKConcentrate-Heavy.eot?#iefix') format('embedded-opentype'),
+       font-url('HKConcentrate/HKConcentrate-Heavy.woff') format('woff'),
+       font-url('HKConcentrate/HKConcentrate-Heavy.woff2') format('woff2'),
+       font-url('HKConcentrate/HKConcentrate-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKConcentrate';
+  src: font-url('HKConcentrate/HKConcentrate-Light.eot');
+  src: font-url('HKConcentrate/HKConcentrate-Light.eot?#iefix') format('embedded-opentype'),
+       font-url('HKConcentrate/HKConcentrate-Light.woff') format('woff'),
+       font-url('HKConcentrate/HKConcentrate-Light.woff2') format('woff2'),
+       font-url('HKConcentrate/HKConcentrate-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: lighter;
+}

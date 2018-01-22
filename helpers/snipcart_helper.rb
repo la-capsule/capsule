@@ -10,6 +10,7 @@ module SnipcartHelper
   def snipcart_button (p, text)
     args = {
       "class" => "snipcart-add-item snipcart__buy-button",
+      "id" => "buy-" + p.id.to_s,
       "data-item-id" => p.id,
       "data-item-price" => p.price.to_json.to_s,
       "data-item-name" => p[locale].name,
@@ -20,7 +21,7 @@ module SnipcartHelper
 
     p.options.each_with_index do |option, i|
       data = snipcart_array_it(option[1].inStocks)
-      args["data-item-custom#{i}-name"] = t("snipcart.#{option[0]}")
+      args["data-item-custom#{i}-name"] = t("snipcart.#{option[0]}", locale: :en)
       args["data-item-custom#{i}-options"] = data
       args["data-item-custom#{i}-value"] = ''
     end

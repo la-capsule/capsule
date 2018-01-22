@@ -8,40 +8,48 @@ dynamic:
   slug: path
 ---
 
-<%= product[locale].name %><br>
-<%= number_to_currency(product.price.eur, :unit => "€") %><br>
-<%= product[locale].description %><br>
-<%= image_tag(product.image) %><br>
+<section id="product" data-item-id="<%= product.id %>">
+  <%= product[locale].name %><br>
+  <%= number_to_currency(product.price.eur, :unit => "€") %><br>
+  <%= product[locale].description %><br>
+  <%= image_tag(product.image) %><br>
 
-<!-- ADD CONDITIONS IF COLOR / SIZE DEFINED -->
-
-<% product.options.colors.inStocks&.each do |k, color| %>
-  <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
-<% end %>
-<% product.options.colors.outOfStocks&.each do |k, color| %>
-  <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
-<% end %>
-
-<br>
-<br>
-<br>
-
-<span class="component__product-how-many">
-  <button class="less"></button>
-  <span>1</span>
-  <button class="more"></button>
-</span>
-
-<br>
-<br>
-<br>
-<select name="size" class="component__product-select">
-  <option value="" selected disabled>Size</option>
-  <% product.options.sizes.inStocks.each do |size| %>
-    <option value="<%= size %>"><%= size %></option>
+  <% if product.options.colors %>
+    <form id="colors" class="picker">
+      <% product.options.colors.inStocks&.each do |k, color| %>
+        <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
+      <% end %>
+      <% product.options.colors.outOfStocks&.each do |k, color| %>
+        <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
+      <% end %>
+    </form>
   <% end %>
-  <% product.options.sizes.outOfStocks.each do |size| %>
-    <option value="<%= size %>" disabled><%= size %></option>
+
+  <br>
+  <br>
+  <br>
+
+  <span class="component__product-how-many">
+    <button class="less"></button>
+    <span>1</span>
+    <button class="more"></button>
+  </span>
+
+  <br>
+  <br>
+  <br>
+  <% if product.options.sizes %>
+  <form id="sizes" class="picker">
+    <select name="size" class="component__product-select">
+      <option value="" selected disabled>Size</option>
+      <% product.options.sizes.inStocks.each do |size| %>
+        <option value="<%= size %>"><%= size %></option>
+      <% end %>
+      <% product.options.sizes.outOfStocks.each do |size| %>
+        <option value="<%= size %>" disabled><%= size %></option>
+      <% end %>
+    </select>
+  </form>
   <% end %>
-</select><br>
-<%= snipcart_button product, t("snipcart.add_to_cart") %>
+  <%= snipcart_button product, t("snipcart.add_to_cart") %>
+</section>

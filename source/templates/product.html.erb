@@ -46,7 +46,7 @@ dynamic:
   <% if product.options.sizes %>
   <form id="sizes" class="option-picker">
     <select name="size" class="component__product-select">
-      <option value="" selected disabled>Size</option>
+      <option value="" selected disabled><%= t('snipcart.sizes') %></option>
       <% product.options.sizes.inStocks.each do |size| %>
         <option value="<%= size %>"><%= size %></option>
       <% end %>

@@ -1,4 +1,7 @@
 # TODO
 - Front-end integration
-- Remove the boilerplate design
 - Customize the cart
+
+
+## Peaufinage
+- On cart (english), translate menu titles

@@ -1,0 +1,13 @@
+footer {
+  width: 58%;
+  margin: 8em auto 3em;
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-size: 1.3em;
+      font-weight: 900;
+    }
+  }
+}

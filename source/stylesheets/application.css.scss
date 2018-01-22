@@ -5,26 +5,15 @@
 @import 'partials/index';
 @import 'components/index';
 @import 'snipcart/index';
-
-
-// Here is some MOMENTANÉ style
+@import 'pages/index';
 
 body {
-  color: #333;
+  color: $black;
   font-family: $primary-font;
-  padding: 18vh 1rem;
-  text-align: center;
 }
-
-.component__product-how-many {
-  margin: 0 auto;
-}
-
 a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+  color: $black;
+}
+section {
+  margin-top: 6em!important;
 }

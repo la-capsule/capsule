@@ -1,5 +1,22 @@
 ---
-slug: creator.name
+slug: creator
 ---
+<section id="creator">
 
-<p><%= t('creator.name') %></p>
+  <h1><%= t('creator.name') %></h1>
+
+  <div id="who-are-you">
+    <% t('creator.description').each_with_index do |c, i| %>
+      <div class="container <%= i.even? ? "container-img-right" : "container-img-left" %>">
+        <%= image_tag "https://via.placeholder.com/450x400" unless i.even? %>
+        <div class="text">
+          <% c.each do |p| %>
+            <p><%= p %></p>
+          <% end %>
+        </div>
+        <%= image_tag "https://via.placeholder.com/463x408" if i.even? %>
+      </div>
+    <% end %>
+  </div>
+
+</section>

@@ -1,14 +1,15 @@
 header {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 34%;
   padding: 1.5em 0;
   padding-left: 50%;
   padding-right: 20%;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFF;
   #logo {
     height: 2.8em;
     transform: translateX(-50%);
@@ -22,11 +23,31 @@ header {
   }
   .snipcart-checkout-icon {
     display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.6em;
+    height: 1.6em;
     margin-right: 5px;
     background-image: image_url('icons/cart.svg');
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+
+nav {
+  position: fixed;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  ul li {
+    margin-bottom: 2em;
+    padding-bottom: 5px;
+    &:hover,
+    .active {
+      padding-bottom: 3px;
+      border-bottom: 2px solid $primary-color;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

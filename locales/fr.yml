@@ -12,16 +12,21 @@ fr:
 
   paths:
     # Paths
+    home: '/'
     about: "a-propos"
     catalog: "catalogue"
     order: "commande"
+    creator: "createur"
 
   ## ------------------
   # Header and footer
   ## ------------------
 
   nav:
-    home: "Accueil"
+    home: "accueil"
+    catalog: "catalogue"
+    creator: "créateur"
+    about: "a propos"
 
   ## ------------------
   # Page translations
@@ -35,6 +40,13 @@ fr:
 
   creator:
     name: "Nom du créateur"
+    description:
+      -
+        - "What would you do if you could achieve the benefits of a professional skin care treatment at home for a fraction of the cost of a visit to the doctor or aesthetician? Cancel your next appointment, of course!"
+        - "Today, at-home skin care kits are becoming more popular and more advanced, giving consumers an affordable option for looking beautiful. “There is a significant increase in the number of women who are looking for affordable, at-home, anti-aging alternatives to professional treatments,” said Dr. Lydia Evans, consulting dermatologist for L’Oreal Paris."
+      -
+        - "What would you do if you could achieve the benefits of a professional skin care treatment at home for a fraction of the cost of a visit to the doctor or aesthetician? Cancel your next appointment, of course!"
+        - "Today, at-home skin care kits are becoming more popular and more advanced, giving consumers an affordable option for looking beautiful. “There is a significant increase in the number of women who are looking for affordable, at-home, anti-aging alternatives to professional treatments,” said Dr. Lydia Evans, consulting dermatologist for L’Oreal Paris."
 
   ## ------------------
   # Shop translations

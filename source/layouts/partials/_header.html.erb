@@ -9,3 +9,11 @@
     </a>
   </div>
 </header>
+
+<nav>
+  <ul>
+    <% t('nav').each do |k, v| %>
+      <li><%= link_to v, t('paths.' + k.to_s) %></li>
+    <% end %>
+  </ul>
+</nav>

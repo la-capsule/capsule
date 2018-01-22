@@ -1,0 +1,39 @@
+section#creator {
+  h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 67%;
+    margin: 0 auto;
+  }
+  #who-are-you {
+    width: 80%;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 20px;
+    line-height: 26.5px;
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2.75em 0 6.5em;
+    .text {
+      width: 43%;
+    }
+    img {
+      width: 51%;
+    }
+    &-img-right {
+      margin-left: 13%;
+    }
+    &-img-left {
+      margin-right: 13%;
+    }
+  }
+}

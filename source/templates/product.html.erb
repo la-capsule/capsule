@@ -15,7 +15,7 @@ dynamic:
   <%= image_tag(product.image) %><br>
 
   <% if product.options.colors %>
-    <form id="colors" class="picker">
+    <form id="colors" class="option-picker">
       <% product.options.colors.inStocks&.each do |k, color| %>
         <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
       <% end %>
@@ -29,17 +29,17 @@ dynamic:
   <br>
   <br>
 
-  <span class="component__product-how-many">
+  <form class="component__product-how-many quantity-picker">
     <button class="less"></button>
     <span>1</span>
     <button class="more"></button>
-  </span>
+  </form>
 
   <br>
   <br>
   <br>
   <% if product.options.sizes %>
-  <form id="sizes" class="picker">
+  <form id="sizes" class="option-picker">
     <select name="size" class="component__product-select">
       <option value="" selected disabled>Size</option>
       <% product.options.sizes.inStocks.each do |size| %>

@@ -7,7 +7,8 @@ class Product {
       this.productId = this.product.dataset.itemId
       this.buyButton = product.querySelector('#buy-' + this.productId)
       this.buyButtonData = this.buyButton.dataset
-      this.pickers = this.product.querySelectorAll('form.picker')
+      this.pickers = this.product.querySelectorAll('form.option-picker')
+      this.quantity = this.product.querySelectorAll('form.quantity-picker')
       this.buyButtonDataCustom = this.componentsConstructor()
       this.init()
     }
@@ -23,6 +24,9 @@ class Product {
     return customData
   }
   init () {
+    if (this.pickers != null) {
+      this.quantityToggle()
+    }
     for (let i = 0; i < this.pickers.length; i++) {
       this.pickers[i].addEventListener('change', () => {
         let values = this.serializeForm(this.pickers[i])
@@ -55,6 +59,17 @@ class Product {
   }
   setValues (value, custom) {
     this.buyButtonData['itemCustom' + custom + 'Value'] = value
+  }
+  quantityToggle () {
+    for (let i = 0; i < this.quantity.length; i++) {
+      let buttons = this.quantity[i].querySelectorAll('button')
+      for (let j = 0; j < buttons.length; j++) {
+        buttons[j].addEventListener('click', () => {
+          let value = this.quantity[i].querySelector('span').innerHTML
+          this.buyButtonData['itemQuantity'] = value
+        })
+      }
+    }
   }
 }
 

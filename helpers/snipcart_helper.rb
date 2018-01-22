@@ -16,7 +16,8 @@ module SnipcartHelper
       "data-item-name" => p[locale].name,
       "data-item-max-quantity" => p.max_quantity,
       "data-item-url" => snipcart_product_url(p),
-      "data-item-image" => p.image
+      "data-item-image" => p.image,
+      "data-item-quantity" => 1
     }
 
     p.options.each_with_index do |option, i|

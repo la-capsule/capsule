@@ -9,6 +9,7 @@ class Counter {
           buttons = counter.getElementsByTagName('button')
       for (let j = 0; j < buttons.length; j++) {
         buttons[j].addEventListener('click', (e) => {
+          e.preventDefault()
           this.process(e.target, counter)
         })
       }

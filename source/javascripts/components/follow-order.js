@@ -1,9 +1,11 @@
 class FollowOrder {
   constructor () {
     this.form = document.getElementById('follow-order')
-    this.order = this.form.querySelector("input[name='id']")
-    this.result = document.getElementById('follow-order-reponse')
-    this.form.addEventListener('submit', this.getOrder.bind(this))
+    if (this.form != null) {
+      this.order = this.form.querySelector("input[name='id']")
+      this.result = document.getElementById('follow-order-reponse')
+      this.form.addEventListener('submit', this.getOrder.bind(this))
+    }
   }
   getOrder () {
     event.preventDefault()

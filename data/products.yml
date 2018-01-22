@@ -18,7 +18,10 @@
       outOfStocks:
         - L
         - XL
-  image: https://via.placeholder.com/200x200
+  image:
+    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
+    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
+    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
   en:
     name: First product
     path: first-product

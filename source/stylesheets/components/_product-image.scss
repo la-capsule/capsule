@@ -1,0 +1,23 @@
+.product-image {
+  position: relative;
+  img {
+    display: none;
+    width: 200px;
+    height: 200px;
+    &.select {
+      display: inline-block;
+    }
+  }
+  #select {
+    width: auto;
+    margin: 0 auto;
+    .dot {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #000;
+      border-radius: 100%;
+      margin: .5em .2em;
+    }
+  }
+}

@@ -12,7 +12,12 @@ dynamic:
   <%= product[locale].name %><br>
   <%= number_to_currency(product.price.eur, :unit => "€") %><br>
   <%= product[locale].description %><br>
-  <%= image_tag(product.image) %><br>
+
+  <div class="product-image">
+    <% product.image.each_with_index do |(alt, image), i| %>
+      <img src="<%= image %>" alt="<%= alt %>" <%= "class = 'select'" if i == 0 %>>
+    <% end %>
+  </div>
 
   <% if product.options.colors %>
     <form id="colors" class="option-picker">

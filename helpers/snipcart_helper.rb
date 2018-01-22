@@ -16,8 +16,12 @@ module SnipcartHelper
       "data-item-name" => p[locale].name,
       "data-item-max-quantity" => p.max_quantity,
       "data-item-url" => snipcart_product_url(p),
-      "data-item-image" => p.image,
-      "data-item-quantity" => 1
+      "data-item-image" => p.image['face'],
+      "data-item-quantity" => 1,
+      "data-item-weight" => p.shipping.weight,
+      "data-item-width" => p.shipping.width,
+      "data-item-length" => p.shipping.length,
+      "data-item-height" => p.shipping.height
     }
 
     p.options.each_with_index do |option, i|

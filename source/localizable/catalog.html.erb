@@ -7,6 +7,6 @@ slug: catalog
     <%= b[locale].name %>
     <%= number_to_currency(b.price.eur, :unit => "€") %>
   <% end %>
-  <%= snipcart_button b, t("snipcart.add_to_cart") %>
+  <%= link_to 'Voir plus', b[locale].path, class: 'btn btn-main' %>
   <br><br>
 <% end %>

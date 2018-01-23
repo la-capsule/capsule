@@ -9,6 +9,7 @@
   transition: 0.2s;
   background-color: #000;
   cursor: pointer;
+  text-align: center;
   &:hover {
     box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em #000;
   }
@@ -16,6 +17,18 @@
     background-color: $primary-color;
     &:hover {
       box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em $primary-color;
+    }
+  }
+  &-outline {
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    &-white {
+      border-color: #FFF;
+      color: #FFF;
+    }
+    &:hover {
+      box-shadow: inset 0 0 0 0.1em #fff;
     }
   }
 }

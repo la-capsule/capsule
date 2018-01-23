@@ -1,0 +1,12 @@
+<div id="concept">
+  <h2><%= t('homepage.concept.name') %></h2>
+
+  <% t('homepage.concept.description').each do |c| %>
+    <div class="paragraph">
+      <% c.each do |p| %>
+        <p><%= p %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+</div>

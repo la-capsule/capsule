@@ -28,12 +28,40 @@ fr:
     creator: "créateur"
     about: "a propos"
 
+  footer:
+    -
+      terms: "Termes et conditions"
+      order: "Suivie de commande"
+      faq: "F.A.Q."
+    -
+      be-creator: "Postuler en tant que créateur"
+      contact: "Contact"
+    -
+      instagram: "instagram"
+      twitter: "twitter"
+      facebook: "facebook"
+
   ## ------------------
   # Page translations
   ## ------------------
 
   homepage:
-    h1: "Bonjour"
+    h1: "Faites vous plaisirs et soutenez les créateurs de votre région"
+    concept:
+      name: "Notre concept"
+      description:
+        -
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
+          - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+        -
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
+          - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+    informations:
+      - Faites vous plaisirs et soutenez les créateurs de votre région
+      - L’équipe Capsule Bordeaux est disponible pour répondre à vos questions 7/7j
+    creator:
+      - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations.
+      - Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
 
   about:
     h1: "A propos"

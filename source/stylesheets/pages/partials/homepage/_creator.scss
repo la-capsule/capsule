@@ -1,0 +1,52 @@
+section#homepage #creator {
+  h2 {
+    margin-top: 9em;
+    margin-bottom: 3em;
+    margin: 9em 0 3em 4em;
+  }
+  .block {
+    padding: 1.5em 4em;
+    padding-left: 10em;
+    float: right;
+    width: 40%;
+    background: $primary-gradient;
+    text-align: center;
+    position: relative;
+    color: #FFF;
+    .below-image {
+      position: absolute;
+    }
+    h3 {
+      font-size: 3.250em;
+      font-weight: bold;
+      margin-bottom: .45em;
+      text-align: left;
+    }
+    p {
+      line-height: 2em;
+      font-size: 1.250em;
+      width: 95%;
+      text-align: left;
+    }
+    .btn {
+      margin-top: .5em;
+    }
+    &.creator {
+      float: right;
+      margin-bottom: 9em;
+      .below-image {
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+    &.product {
+      float: left;
+      .below-image {
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%) scale(1.1);
+      }
+    }
+  }
+}

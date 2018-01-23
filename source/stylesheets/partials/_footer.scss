@@ -1,3 +1,24 @@
 footer {
-
+  float: left;
+  width: 100%;
+  margin-top: 9em;
+  padding: 3em 0;
+  background: $primary-gradient;
+  .container {
+    display: flex;
+    width: 38%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .column a {
+    padding-bottom: 2.8em;
+    display: block;
+    font-size: 0.688em;
+    font-weight: bold;
+    color: #FFF;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }

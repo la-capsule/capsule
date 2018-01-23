@@ -1,0 +1,24 @@
+@import "partials/homepage/bubble";
+@import "partials/homepage/concept";
+@import "partials/homepage/informations";
+@import "partials/homepage/creator";
+section#homepage {
+  margin-top: 12em!important;
+  h1 {
+    font-size: 1.875em;
+    font-weight: bold;
+    width: 40%;
+    margin-top: 1.55em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.35em;
+    position: absolute;
+    z-index: 1;
+  }
+  h2 {
+    font-size: 2.500em;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}

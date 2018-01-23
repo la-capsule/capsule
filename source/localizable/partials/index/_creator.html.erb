@@ -1,0 +1,19 @@
+<div id="creator">
+  <h2><%= data.pages.creator.name %></h2>
+  <div class="block creator">
+    <%= image_tag "products/sample.png", class: 'below-image' %>
+    <h3>Détails</h3>
+    <% t('homepage.creator').each do |p| %>
+      <p><%= p %></p>
+    <% end %>
+    <%= link_to 'En savoir plus', '#', class: 'btn btn-outline btn-outline-white' %>
+  </div>
+  <div class="block product">
+    <%= image_tag "products/sample.png", class: 'below-image' %>
+    <h3>Détails</h3>
+    <% t('homepage.creator').each do |p| %>
+      <p><%= p %></p>
+    <% end %>
+    <%= link_to 'En savoir plus', '#', class: 'btn btn-outline btn-outline-white' %>
+  </div>
+</div>

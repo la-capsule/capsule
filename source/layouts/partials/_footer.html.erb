@@ -1,4 +1,13 @@
 <footer>
+  <div class="container">
+    <% t('footer').each do |c| %>
+        <div class="column">
+          <% c.each do |k, p| %>
+            <%= link_to p, '#' %>
+          <% end %>
+        </div>
+    <% end %>
+  </div>
   <!-- <%= link_translate(:en) %> -->
   <!-- <%= link_translate(:fr) %> -->
 </footer>

@@ -1,8 +1,9 @@
-@import 'partials/fonts';
-@import 'partials/vars';
-
+@import 'misc/fonts';
+@import 'misc/vars';
 @import 'misc/reset';
-@import 'partials/index';
+
+@import 'partials/header';
+@import 'partials/footer';
 @import 'components/index';
 @import 'snipcart/index';
 @import 'pages/index';

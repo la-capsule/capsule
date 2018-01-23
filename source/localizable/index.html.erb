@@ -1,10 +1,10 @@
 ---
 slug: homepage
 ---
-<h1>
-  <%= t("homepage.h1") %>
-</h1>
-
-<div id="app"></div>
-
-<%= link_to(t("titles.catalog"), t("paths.catalog")) %>
+<section id="homepage">
+  <h1><%= t("homepage.h1") %></h1>
+  <%= partial 'partials/index/bubble' %>
+  <%= partial 'partials/index/concept' %>
+  <%= partial 'partials/index/creator' %>
+  <%= partial 'partials/index/informations' %>
+</section>

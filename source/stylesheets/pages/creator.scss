@@ -1,6 +1,6 @@
 section#creator {
   h1 {
-    font-size: 70px;
+    font-size: 4.375em;
     font-weight: 900;
     text-transform: uppercase;
     width: 67%;
@@ -11,8 +11,8 @@ section#creator {
     margin: 0 auto;
   }
   p {
-    font-size: 20px;
-    line-height: 26.5px;
+    font-size: 1.250em;
+    line-height: 1.656em;
     margin-top: .5em;
     margin-bottom: 1.5em;
     text-align: justify;
@@ -34,6 +34,33 @@ section#creator {
     }
     &-img-left {
       margin-right: 13%;
+    }
+  }
+  @media #{$bigTablet} {
+    #who-are-you {
+      width: 90%;
+    }
+    h1 {
+      width: 90%;
+    }
+    .container {
+      width: 100%;
+      font-size: .85em;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  @media #{$classicTablet} {
+    .container {
+      flex-wrap: wrap;
+      .text {
+        width: 100%;
+        order: 1;
+      }
+      img {
+        margin: 0 auto;
+        order: 2;
+      }
     }
   }
 }

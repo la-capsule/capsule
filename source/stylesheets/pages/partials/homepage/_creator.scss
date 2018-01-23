@@ -7,7 +7,6 @@ section#homepage #creator {
   .block {
     padding: 1.5em 4em;
     padding-left: 10em;
-    float: right;
     width: 40%;
     background: $primary-gradient;
     text-align: center;
@@ -34,19 +33,61 @@ section#homepage #creator {
     &.creator {
       float: right;
       margin-bottom: 9em;
+      .details {
+        order: 2;
+      }
       .below-image {
         top: 50%;
         left: 0;
         transform: translate(-50%, -50%) scale(1.1);
+        order: 1;
       }
     }
     &.product {
       float: left;
+      .details {
+        order: 1;
+      }
       .below-image {
         top: 50%;
         right: 0;
         transform: translate(50%, -50%) scale(1.1);
+        order: 2;
       }
+    }
+  }
+  @media #{$classicTablet} {
+    .block {
+      float: none!important;
+      width: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 2em;
+      padding-right: 2em;
+      .below-image {
+        position: inherit;
+        transform: inherit!important;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      .details {
+        width: 60%;
+      }
+      p {
+        margin-right: 0;
+      }
+      .btn {
+        margin-top: 1.5em;
+      }
+    }
+  }
+  @media #{$mediumPhone} {
+    .block {
+      flex-wrap: wrap;
+    }
+    .block .below-image {
+      margin: 1.5em auto;
     }
   }
 }

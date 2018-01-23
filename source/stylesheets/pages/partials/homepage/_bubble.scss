@@ -2,6 +2,7 @@ section#homepage #bubble {
   width: 38%;
   margin: 3.65em auto 0;
   position: relative;
+  min-width: 337px;
   #blob {
     margin-top: 3.5em;
     .cls-1 {
@@ -21,7 +22,13 @@ section#homepage #bubble {
     position: absolute;
     top: 0;
     margin: 50%;
-    transform: translate(-40%, -50%);
+    transform: translate(-40%, -45%);
+    height: 55%;
+    text-align: center;
+    img {
+      width: auto;
+      height: 100%;
+    }
   }
   .btn {
     position: absolute;
@@ -30,5 +37,18 @@ section#homepage #bubble {
     transform: translateX(-40%);
     font-weight: bold;
     width: 45%;
+    min-width: 280px;
+  }
+  @media #{$classicScreen} {
+    .btn {
+      min-width: 230px;
+    }
+  }
+  @media #{$bigTablet} {
+    margin-top: 9em;
+    .btn {
+      bottom: 12%;
+      min-width: 180px;
+    }
   }
 }

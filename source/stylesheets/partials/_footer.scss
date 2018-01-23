@@ -21,4 +21,14 @@ footer {
       padding-bottom: 0;
     }
   }
+  @media #{$classicScreen} {
+    .container {
+      width: 55%;
+    }
+  }
+  @media #{$bigTablet} {
+    .container {
+      width: 70%;
+    }
+  }
 }

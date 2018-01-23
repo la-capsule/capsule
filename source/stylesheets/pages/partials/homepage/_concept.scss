@@ -12,4 +12,9 @@ section#homepage #concept {
     line-height: 1.95em;
     text-align: justify;
   }
+  @media #{$classicTablet} {
+    width: inherit;
+    display: block;
+    padding-left: 3.35em;
+  }
 }

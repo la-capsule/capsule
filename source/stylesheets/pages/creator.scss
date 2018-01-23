@@ -6,34 +6,38 @@ section#creator {
     width: 67%;
     margin: 0 auto;
   }
-  #who-are-you {
-    width: 80%;
-    margin: 0 auto;
-  }
   p {
     font-size: 1.250em;
     line-height: 1.656em;
     margin-top: .5em;
     margin-bottom: 1.5em;
-    text-align: justify;
   }
   .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 90%;
     margin: 3em 0 6.5em;
     .text {
-      width: 43%;
+      width: auto;
+      background: $soft-white;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
     img {
-      width: 51%;
+      width: 45%;
+      margin-top: 2em;
     }
     &-img-right {
-      margin-left: 13%;
+      .text {
+        padding-left: 13%;
+        padding-right: 4.375em;
+      }
     }
     &-img-left {
-      margin-right: 13%;
+      .text {
+        padding-right: 13%;
+        padding-left: 4.375em;
+      }
     }
   }
   .socials {
@@ -71,9 +75,6 @@ section#creator {
     }
   }
   @media #{$bigTablet} {
-    #who-are-you {
-      width: 90%;
-    }
     h1 {
       width: 90%;
     }
@@ -82,6 +83,11 @@ section#creator {
       font-size: .85em;
       margin-right: 0;
       margin-left: 0;
+      &-img-right .text,
+      &-img-left .text {
+        padding-right: 4.375em;
+        padding-left: 4.375em;
+      }
     }
   }
   @media #{$classicTablet} {

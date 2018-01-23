@@ -24,4 +24,13 @@ module ApplicationHelper
 
     link_to(text, path, options)
   end
+
+  def is_current_path?(*args)
+    args.each do |arg|
+      if current_page.url.to_s == arg
+        return true
+      end
+    end
+    return false
+  end
 end

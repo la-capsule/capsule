@@ -9,16 +9,22 @@ header {
   padding-right: 20%;
   justify-content: space-between;
   align-items: center;
+  &.big-header {
+    align-items: flex-start;
+  }
   #logo {
     height: 2.8em;
     transform: translateX(-50%);
+    &.logo-large {
+      height: 8.625em;
+    }
   }
   a {
     text-decoration: none;
   }
   .snipcart-checkout {
     display: flex;
-    align-items: center;
+    align-items: normal;
   }
   .snipcart-checkout-icon {
     display: inline-block;
@@ -28,6 +34,10 @@ header {
     background-image: image_url('icons/cart.svg');
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .snipcart-total-items {
+    line-height: 1.9em;
+    color: $primary-color;
   }
 }
 

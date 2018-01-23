@@ -1,6 +1,7 @@
-<header>
+<header <%= "class= big-header" if is_current_path?('/', '/en') %>>
   <% link_to uri_root_path do %>
-    <%= image_tag('logo.svg', id: "logo") %>
+    <%= image_tag('logo.svg', id: "logo") unless is_current_path?('/', '/en') %>
+    <%= image_tag('logo-large.svg', id: "logo", class: "logo-large") if is_current_path?('/', '/en') %>
   <% end %>
   <div class="snipcart-summary">
     <a href="#" class="snipcart-checkout">

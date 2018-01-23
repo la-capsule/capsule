@@ -11,6 +11,9 @@ body {
   color: $black;
   font-family: $primary-font;
 }
+::selection {
+  background: $primary-color;
+}
 a {
   color: $black;
 }

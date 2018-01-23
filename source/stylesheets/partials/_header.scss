@@ -9,7 +9,6 @@ header {
   padding-right: 20%;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFF;
   #logo {
     height: 2.8em;
     transform: translateX(-50%);
@@ -40,14 +39,27 @@ nav {
   font-size: 1.1em;
   ul li {
     margin-bottom: 2em;
-    padding-bottom: 5px;
-    &:hover,
-    .active {
-      padding-bottom: 3px;
-      border-bottom: 2px solid $primary-color;
-    }
-    &:last-child {
-      margin-bottom: 0;
+    a {
+      &:after {
+        content: "";
+        display: block;
+        transform: translateY(-50%);
+        height: 3px;
+        width: 0px;
+        background-color: $primary-color;
+        margin-top: 8px;
+        transition: .3s ease-in-out;
+        z-index: 2;
+      }
+      &:hover,
+      &.active {
+        &:after {
+          width: 100%;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -14,3 +14,15 @@ $buy-button: #FC5143;
 ***********************/
 
 $primary-font: 'HKConcentrate', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+/***********************
+* MEDIA QUERIES
+***********************/
+$littlePhone: "screen and (max-width : 480px)";
+$mediumPhone: "screen and (max-width : 568px)";
+$classicPhone: "screen and (max-width : 667px)";
+$bigPhone: "screen and (max-width : 736px)";
+$classicTablet: "screen and (max-width : 875px)";
+$bigTablet: "screen and (max-width : 1024px)";
+$classicScreen: "screen and (max-width : 1200px)";
+$bigScreen: "screen and (max-width : 1600px)";

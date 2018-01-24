@@ -1,6 +1,7 @@
 ---
 dir:
   - catalog
+footer: false
 dynamic:
   enable: true
   data: product
@@ -9,52 +10,55 @@ dynamic:
 ---
 
 <section id="product" data-item-id="<%= product.id %>">
-  <%= product[locale].name %><br>
-  <%= number_to_currency(product.price.eur, :unit => "€") %><br>
-  <%= product[locale].description %><br>
 
   <div class="product-image">
     <% product.image.each_with_index do |(alt, image), i| %>
-      <%= image_tag image, alt: alt, class: (i == 0 ? 'select' : '') %>
+      <%= image_tag image, alt: alt, class: (i == product.image.count / 2 ? 'select' : '') %>
     <% end %>
   </div>
 
-  <% if product.options.colors %>
-    <form id="colors" class="option-picker">
-      <% product.options.colors.inStocks&.each do |k, color| %>
-        <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
-      <% end %>
-      <% product.options.colors.outOfStocks&.each do |k, color| %>
-        <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
-      <% end %>
-    </form>
-  <% end %>
+  <div class="product-details">
+    <h1><%= product[locale].name %></h1>
+    <p><%= product[locale].description %></p>
 
-  <br>
-  <br>
-  <br>
+    <% if product.options.colors %>
+      <h2>Couleur</h2>
+      <form id="colors" class="option-picker">
+        <% product.options.colors.inStocks&.each do |k, color| %>
+          <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
+        <% end %>
+        <% product.options.colors.outOfStocks&.each do |k, color| %>
+          <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
+        <% end %>
+      </form>
+    <% end %>
 
-  <form class="component__product-how-many quantity-picker">
-    <button class="less"></button>
-    <span>1</span>
-    <button class="more"></button>
-  </form>
+    <div class="options">
+      <% if product.options.sizes %>
+      <form id="sizes" class="option-picker">
+        <h2>Taille</h2>
+        <select name="size" class="component__product-select">
+          <option value="" selected disabled><%= t('snipcart.sizes') %></option>
+          <% product.options.sizes.inStocks.each do |size| %>
+            <option value="<%= size %>"><%= size %></option>
+          <% end %>
+          <% product.options.sizes.outOfStocks.each do |size| %>
+            <option value="<%= size %>" disabled><%= size %></option>
+          <% end %>
+        </select>
+      </form>
+      <% end %>
+      <form class="quantity-picker">
+        <h2>Qté</h2>
+        <div class="component__product-how-many">
+          <button class="less"></button>
+          <span>1</span>
+          <button class="more"></button>
+        </div>
+      </form>
+    </div>
 
-  <br>
-  <br>
-  <br>
-  <% if product.options.sizes %>
-  <form id="sizes" class="option-picker">
-    <select name="size" class="component__product-select">
-      <option value="" selected disabled><%= t('snipcart.sizes') %></option>
-      <% product.options.sizes.inStocks.each do |size| %>
-        <option value="<%= size %>"><%= size %></option>
-      <% end %>
-      <% product.options.sizes.outOfStocks.each do |size| %>
-        <option value="<%= size %>" disabled><%= size %></option>
-      <% end %>
-    </select>
-  </form>
-  <% end %>
-  <%= snipcart_button product, t("snipcart.add_to_cart") %>
+    <span class="price"><%= number_to_currency(product.price.eur, :unit => "€") %></span>
+    <%= snipcart_button product, t("snipcart.add_to_cart") %>
+  </div>
 </section>

@@ -1,15 +1,16 @@
 .snipcart__buy-button {
   outline: none;
   appearance: none;
-  width: 16em;
-  height: 3em;
+  width: 18em;
+  height: 2.75em;
   border: none;
-  background-color: #8ee3ca;
+  background-color: #FC5143;
   border-radius: 3em;
   font-size: 1.1em;
   transition: 0.2s;
   cursor: pointer;
+  color: #FFF;
   &:hover {
-    box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em #8ee3ca;
+    box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em #FC5143;
   }
 }

@@ -25,6 +25,9 @@ class ProductImage {
     select.appendChild(el)
           .setAttribute('class', 'dot')
     this.dots.push(el)
+    if (this.imgList[i].classList.contains('select')) {
+      el.classList.add('select')
+    }
     el.addEventListener('mouseover', () => {
       this.event(i, el)
     })

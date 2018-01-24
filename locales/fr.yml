@@ -27,6 +27,7 @@ fr:
     catalog: "catalogue"
     creator: "créateur"
     about: "a propos"
+    contact: "contact"
 
   footer:
     -
@@ -88,3 +89,5 @@ fr:
 
   snipcart:
     add_to_cart: "Ajouter au panier"
+    sizes: "Tailles"
+    colors: "Couleurs"

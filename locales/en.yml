@@ -25,6 +25,7 @@ en:
     home: "home"
     catalog: "catalog"
     creator: "creator"
+    contact: "contact"
     about: "about"
 
   footer:
@@ -89,3 +90,5 @@ en:
 
   snipcart:
     add_to_cart: "Add to cart"
+    sizes: "Sizes"
+    colors: "Colors"

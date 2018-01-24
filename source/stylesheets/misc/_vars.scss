@@ -8,6 +8,7 @@ $primary-gradient: linear-gradient(-221deg, #82ABF9 0%, #6FB7FA 35%, #73C5F6 65%
 $primary-gradient-invert: linear-gradient(139deg, #82ABF9 0%, #6FB7FA 35%, #73C5F6 65%, #83D2F0 100%);
 
 $black: #000;
+$soft-black: #4C4C4C;
 $soft-white: #F7F9FB;
 $buy-button: #FC5143;
 
@@ -20,6 +21,7 @@ $primary-font: 'HKConcentrate', 'Helvetica Neue', 'Helvetica', sans-serif;
 /***********************
 * MEDIA QUERIES
 ***********************/
+
 $littlePhone: "screen and (max-width : 480px)";
 $mediumPhone: "screen and (max-width : 568px)";
 $classicPhone: "screen and (max-width : 667px)";

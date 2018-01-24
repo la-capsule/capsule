@@ -26,7 +26,7 @@ module SnipcartHelper
 
     p.options.each_with_index do |option, i|
       data = snipcart_array_it(option[1].inStocks)
-      args["data-item-custom#{i}-name"] = t("snipcart.#{option[0]}", locale: :fr)
+      args["data-item-custom#{i}-name"] = option[0]
       args["data-item-custom#{i}-options"] = data
       args["data-item-custom#{i}-value"] = ''
     end

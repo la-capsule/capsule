@@ -15,7 +15,7 @@ dynamic:
 
   <div class="product-image">
     <% product.image.each_with_index do |(alt, image), i| %>
-      <%= image_tag image, alt: alt, class: ('select' if i == 0) %>
+      <%= image_tag image, alt: alt, class: (i == 0 ? 'select' : '') %>
     <% end %>
   </div>
 

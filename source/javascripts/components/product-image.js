@@ -5,6 +5,7 @@ class ProductImage {
       for (let i = 0; i < this.els.length; i++) {
         let el = this.els[i]
         this.imgList = el.getElementsByTagName('img')
+        this.dots = []
         this.addSelector(el)
         this.process(el)
       }
@@ -23,17 +24,19 @@ class ProductImage {
     let el = document.createElement('span')
     select.appendChild(el)
           .setAttribute('class', 'dot')
-    select.setAttribute('data-id', i)
+    this.dots.push(el)
     el.addEventListener('mouseover', () => {
-      this.event(i)
+      this.event(i, el)
     })
   }
-  event (i) {
+  event (i, dot) {
     for (let j = 0; j < this.imgList.length; j++) {
       if (j == i) {
         this.imgList[j].classList.add('select')
+        this.dots[j].classList.add('select')
       } else {
         this.imgList[j].classList.remove('select')
+        this.dots[j].classList.remove('select')
       }
     }
   }

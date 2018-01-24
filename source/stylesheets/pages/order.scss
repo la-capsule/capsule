@@ -1,0 +1,47 @@
+section#order {
+  width: 65%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    font-size: 3.250em;
+    font-weight: 900;
+    margin-left: 5%;
+    margin-bottom: 1.3em;
+  }
+  #follow-order-ask {
+    p {
+      font-size: 1.063em;
+      line-height: 1.938em;
+      margin-bottom: 5em;
+    }
+    form {
+      margin-left: 15%;
+      label {
+        font-size: 1em;
+      }
+      input[type='text'] {
+        display: block;
+        appearance: none;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #343434;
+        background-color: #FFF !important;
+        font-size: 1.063em;
+        padding-top: .3em;
+        width: 30%;
+        min-width: 180px;
+        max-width: 250px;
+      }
+      input[type='submit'] {
+        position: absolute;
+        bottom: -5em;
+        right: 0;
+        margin-top: 5em;
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

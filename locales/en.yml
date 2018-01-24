@@ -76,6 +76,13 @@ en:
         - "What would you do if you could achieve the benefits of a professional skin care treatment at home for a fraction of the cost of a visit to the doctor or aesthetician? Cancel your next appointment, of course!"
         - "Today, at-home skin care kits are becoming more popular and more advanced, giving consumers an affordable option for looking beautiful. “There is a significant increase in the number of women who are looking for affordable, at-home, anti-aging alternatives to professional treatments,” said Dr. Lydia Evans, consulting dermatologist for L’Oreal Paris."
 
+
+
+  order-following:
+    h1: "Suivie de commande"
+    p: "Pour suivre votre commande veuillez renseigner votre identifiant de commande dans la boite ci-dessous et cliquer le bouton « Suivre ». Il vous a été donné sur votre reçu et dans l’e-mail de confirmation que vous avez du recevoir."
+    nd: "Non défini"
+
   ## ------------------
   # Shop translations
   ## ------------------

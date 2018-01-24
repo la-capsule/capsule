@@ -1,14 +1,29 @@
 ---
 slug: order
 ---
-<h1>
-  <%= t("homepage.h1") %>
-</h1>
+<section id="order">
+  <h1><%= t("order-following.h1") %></h1>
+  <div id="follow-order-ask">
+    <p><%= t("order-following.p") %></p>
 
-<% form_tag 'http://capsule-admin.herokuapp.com/orders/', id: 'follow-order' do %>
-  <%= label_tag :id %>
-  <%= text_field_tag :id, placeholder: 'CAPS-####' %>
-  <%= submit_tag %>
-<% end %>
+    <% form_tag 'http://capsule-admin.herokuapp.com/orders/', id: 'follow-order-form' do %>
+      <%= label_tag :id, caption: 'Numéro de commande' %>
+      <%= text_field_tag :id, placeholder: 'CAPS-####' %>
+      <%= submit_tag 'Suivre', class: 'btn btn-main' %>
+    <% end %>
+  </div>
 
-<div id="follow-order-reponse"></div>
+  <div id="follow-order-response" class="hide">
+    Statut :
+    <span data-order data-order-status></span><br>
+    Numéro de commande :
+    <span data-order data-order-id></span><br>
+    Suivi de colis :
+    <a href="#" data-order data-order-tracking-url>
+      <span data-order data-order-tracking-number><%= t("order-following.nd") %></span>
+    </a>
+    <br>
+    Nom du client :
+    <span data-order data-order-user-name></span><br>
+  </div>
+</section>

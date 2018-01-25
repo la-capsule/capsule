@@ -17,6 +17,7 @@ fr:
     catalog: "catalogue"
     order: "commande"
     creator: "createur"
+    contact: "contact"
 
   ## ------------------
   # Header and footer

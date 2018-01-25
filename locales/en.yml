@@ -17,6 +17,7 @@ en:
     catalog: "catalog"
     order: "order"
     creator: "creator"
+    contact: "contact"
 
   ## ------------------
   # Header and footer

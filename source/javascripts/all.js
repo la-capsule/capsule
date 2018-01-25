@@ -8,3 +8,15 @@ import Faq from './components/faq.js'
 
 // Set snipcart default currency
 Snipcart.api.cart.currency('eur')
+
+var slider = tns({
+  container: '#team',
+  items: 3,
+  mouseDrag: true,
+  gutter: 40,
+  edgePadding: 100,
+  slideBy: 'page',
+  lazyload: true,
+  controls: false,
+  nav: false
+});

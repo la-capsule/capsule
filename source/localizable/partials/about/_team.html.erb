@@ -1,0 +1,18 @@
+<div id="team">
+  <% data.pages.about.team.each do |guy| %>
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag "team/#{guy.slug}.jpg" %>
+      </div>
+      <div class="card-info">
+        <span class="name"><%= guy.name %></span>
+        <span class="role"><%= guy.role %></span>
+        <div class="socials">
+          <% guy.socials.each do |k, v| %>
+            <span><%= link_to k, v %></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

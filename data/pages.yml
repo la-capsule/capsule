@@ -10,3 +10,36 @@ about:
       - https://unsplash.com/photos/UCZF1sXcejo/download?force=true
       - https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
       - https://unsplash.com/photos/UCZF1sXcejo/download?force=true
+  team:
+    -
+      slug: joshua
+      name: Joshua Richard
+      role: Graphiste
+      socials:
+        facebook: '#'
+        twitter: '#'
+        linkedin: '#'
+    -
+      slug: emeline
+      name: Emeline Bailleul
+      role: Relations créateurs
+      socials:
+        facebook: '#'
+        twitter: '#'
+        linkedin: '#'
+    -
+      slug: bastien
+      name: Bastien Robert
+      role: Développeur
+      socials:
+        facebook: '#'
+        twitter: '#'
+        linkedin: '#'
+    -
+      slug: mathias
+      name: Mathias Fratani
+      role: Communication
+      socials:
+        facebook: '#'
+        twitter: '#'
+        linkedin: '#'

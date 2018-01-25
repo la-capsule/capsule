@@ -27,7 +27,7 @@ module ApplicationHelper
 
   def is_current_path?(*args)
     args.each do |arg|
-      if current_page.url.to_s == arg
+      if current_page.data.slug == arg
         return true
       end
     end

@@ -28,6 +28,7 @@
 
     <%= stylesheet_link_tag "application" %>
     <%= stylesheet_link_tag "https://cdn.snipcart.com/themes/2.0/base/snipcart.css" %>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css" if is_current_path?('about') %>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= javascript_include_tag  "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
@@ -39,6 +40,7 @@
     <%= yield %>
     <%= partial 'layouts/partials/footer' %>
 
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/min/tiny-slider.js" if is_current_path?('about') %>
     <%= javascript_include_tag "all" %>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113064441-1"></script>

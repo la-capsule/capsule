@@ -1,3 +1,36 @@
 section#about #team {
-
+  cursor: pointer;
+  .card-image {
+    img {
+      width: 100%;
+    }
+  }
+  .card-info {
+    .name,
+    .role,
+    .socials {
+      margin-top: 1em;
+    }
+    .name,
+    .role {
+      display: block;
+      font-size: 1.125em;
+    }
+    .name {
+      font-weight: 900;
+    }
+    .socials {
+      font-weight: 200;
+      span a {
+        color: $soft-black;
+        transition: .2s;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      &:before {
+        content: '>'
+      }
+    }
+  }
 }

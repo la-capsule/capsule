@@ -1,43 +1,20 @@
 section#homepage #bubble {
-  width: 38%;
-  margin: 3.65em auto 0;
-  position: relative;
-  min-width: 337px;
-  #blob {
-    margin-top: 3.5em;
-    .cls-1 {
-      isolation: isolate;
-    }
-    .cls-2 {
-      mix-blend-mode: multiply;
-    }
-    .cls-3 {
-      fill: #80d1f1;
-    }
-    .cls-4 {
-      fill: #95b6fb;
-    }
-  }
+  min-width: 300px;
+  padding: 3em 2em 5em;
+  background-image: image_url('bubble.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
   .main-product {
-    position: absolute;
-    top: 0;
-    margin: 50%;
-    transform: translate(-40%, -45%);
-    height: 55%;
-    text-align: center;
-    img {
-      width: auto;
-      height: 100%;
-    }
+    display: block;
   }
   .btn {
-    position: absolute;
-    bottom: 16%;
-    left: 50%;
-    transform: translateX(-40%);
     font-weight: bold;
-    width: 45%;
+    margin: 0 auto;
     min-width: 280px;
+    transform: translateX(1em);
   }
   @media #{$classicScreen} {
     .btn {
@@ -45,7 +22,6 @@ section#homepage #bubble {
     }
   }
   @media #{$bigTablet} {
-    margin-top: 9em;
     .btn {
       bottom: 12%;
       min-width: 180px;

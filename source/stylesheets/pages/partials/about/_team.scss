@@ -1,5 +1,8 @@
 section#about #team {
   cursor: pointer;
+  .card {
+    min-width: 275px;
+  }
   .card-image {
     img {
       width: 100%;

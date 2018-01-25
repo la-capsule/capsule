@@ -1,8 +1,10 @@
 # TODO
 - Responsive
-  - Product page
-  - Catalog page
   - Order page
+  - About page
+- Menu on little screens
+- Add products for this month
+- Snipcart customization
 
 
 ## Peaufinage

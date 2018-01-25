@@ -21,19 +21,18 @@ dynamic:
     <h1><%= product[locale].name %></h1>
     <p><%= product[locale].description %></p>
 
-    <% if product.options.colors %>
-      <h2>Couleur</h2>
-      <form id="colors" class="option-picker">
-        <% product.options.colors.inStocks&.each do |k, color| %>
-          <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
-        <% end %>
-        <% product.options.colors.outOfStocks&.each do |k, color| %>
-          <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
-        <% end %>
-      </form>
-    <% end %>
-
     <div class="options">
+      <% if product.options.colors %>
+        <form id="colors" class="option-picker">
+          <h2>Couleur</h2>
+          <% product.options.colors.inStocks&.each do |k, color| %>
+            <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
+          <% end %>
+          <% product.options.colors.outOfStocks&.each do |k, color| %>
+            <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
+          <% end %>
+        </form>
+      <% end %>
       <% if product.options.sizes %>
       <form id="sizes" class="option-picker">
         <h2>Taille</h2>

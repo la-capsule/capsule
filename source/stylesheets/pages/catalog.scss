@@ -15,10 +15,12 @@ section#catalog {
     width: 75%;
     margin-left: 5em;
     margin-bottom: 4.5em;
+    color: $black;
     .component__little-product {
       flex-wrap: wrap;
       flex-shrink: 1;
       flex-direction: column;
+      text-align: right;
     }
     .btn {
       font-weight: 900;
@@ -34,21 +36,28 @@ section#catalog {
         content: '';
         position: absolute;
         display: block;
-        right: 0;
         margin-top: .3em;
         width: 300%;
         height: 2px;
         background-color: $black;
         border: none;
+        transition: .2s;
       }
     }
     &-left {
       float: left;
+      .number:after {
+        right: 0;
+      }
     }
     &-right {
       float: right;
       flex-direction: row-reverse;
+      .number:after {
+        left: 0;
+      }
       .component__little-product {
+        align-items: flex-start;
         text-align: left;
         img {
           left: 100%;
@@ -69,6 +78,99 @@ section#catalog {
         &:after {
           right: -110%;
         }
+      }
+      .number:after {
+        width: 400%;
+      }
+    }
+  }
+  @media #{$classicScreen} {
+    .product {
+      width: 85%;
+      &-right:hover .component__little-product:after {
+        left: -80%;
+      }
+      &-left:hover .component__little-product:after {
+        right: -80%;
+      }
+      .btn {
+        margin-left: 20%;
+      }
+    }
+  }
+  @media #{$bigTablet} {
+    width: 80%;
+  }
+  @media #{$classicTablet} {
+    width: 90%;
+    .product {
+      width: 85%;
+      &-left .btn {
+        margin-right: 20%;
+        margin-left: 0;
+      }
+      &-right {
+        margin-right: 5em;
+      }
+    }
+  }
+  @media #{$bigPhone} {
+    width: 100%;
+    h1 {
+      text-align: center;
+    }
+    .product {
+      margin-left: 0;
+      margin-right: 0;
+      display: block;
+      width: 100%;
+      position: relative;
+      .number {
+        display: none;
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+      }
+    }
+    .component__little-product {
+      width: auto;
+      align-items: flex-start;
+      display: block;
+      text-align: left;
+      span {
+        text-align: left;
+      }
+      img {
+        left: inherit!important;
+        right: 1em;
+        transform: none;
+      }
+      &:hover::after {
+        left: 0!important;
+        right: 0!important;
+      }
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+  @media #{$mediumPhone} {
+    .product {
+      .name {
+        margin-bottom: 4em;
+        font-size: 1em;
+      }
+      .price {
+        display: none;
+      }
+      .btn {
+        top: 65%;
+        left: 6em;
       }
     }
   }

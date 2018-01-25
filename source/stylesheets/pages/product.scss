@@ -5,8 +5,12 @@ section#product {
   margin-right: auto;
   margin-left: auto;
   .product-image {
-    width: 30%;
-    margin-bottom: 4em;
+    max-width: 500px;
+    margin-bottom: 2.5em;
+    margin-left: 2.5em;
+    img {
+      box-shadow: 0 2px 14px rgba(0, 0, 0, .5);
+    }
     &:before {
       content: '';
       position: fixed;
@@ -21,7 +25,7 @@ section#product {
   }
   .product-details {
     margin: 0 5em;
-    max-width: 420px;
+    width: 30%;
   }
   h1 {
     font-size: 2.5em;
@@ -41,6 +45,7 @@ section#product {
     font-size: 0.875em;
     line-height: 2em;
     margin-bottom: 2em;
+    width: 85%;
   }
   .options {
     margin-top: 3em;
@@ -48,9 +53,17 @@ section#product {
     display: flex;
     justify-content: left;
     align-items: top;
+    flex-wrap: wrap;
     form:last-child {
       margin-left: 4em;
     }
+  }
+  .options > form:first-child {
+     flex: 0 1 100%;
+     padding-bottom: 2em;
+  }
+  .quantity-picker {
+    flex-grow: 1;
   }
   .price {
     color: $soft-black;
@@ -60,5 +73,69 @@ section#product {
   }
   .snipcart__buy-button {
     margin-top: 2.5em;
+  }
+  @media #{$bigTablet} {
+    align-items: center;
+    .product-image {
+      width: 35%;
+    }
+    .product-details {
+      width: 40%;
+      margin-right: 0;
+    }
+  }
+  @media #{$bigPhone} {
+    flex-direction: column;
+    .product-image {
+      width: 100%;
+      margin: 0;
+      padding: 3em 0 2em;
+      position: relative;
+      max-width: inherit;
+      img {
+        width: 75%;
+        margin: 0 auto;
+      }
+      &:before {
+        position: absolute;
+        transform: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    .product-details {
+      margin: 2em 0 0;
+      width: 90%;
+      p {
+        width: 100%;
+      }
+      .options {
+        justify-content: space-between;
+      }
+      #colors {
+        flex: inherit;
+      }
+      #sizes {
+        order: 3;
+        align-self: left;
+        flex: 0 1 100%;
+      }
+      .quantity-picker {
+        order: 2;
+        margin-left: 0!important;
+        text-align: right;
+        div {
+          float: right;
+        }
+      }
+      .price {
+        transform: translateY(-150%);
+      }
+      .snipcart__buy-button {
+        margin-top: 0;
+      }
+    }
   }
 }

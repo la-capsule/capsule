@@ -4,6 +4,7 @@
   width: 30%;
   padding: 2em;
   text-align: right;
+  align-items: flex-end;
   img {
     position: absolute;
     left: 0;
@@ -15,6 +16,8 @@
   .name,
   .price {
     display: block;
+    text-align: right;
+    width: 70%;
   }
   .name {
     font-size: .75em;

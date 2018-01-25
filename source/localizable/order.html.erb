@@ -14,16 +14,58 @@ slug: order
   </div>
 
   <div id="follow-order-response" class="hide">
-    Statut :
-    <span data-order data-order-status></span><br>
-    Numéro de commande :
-    <span data-order data-order-id></span><br>
-    Suivi de colis :
-    <a href="#" data-order data-order-tracking-url>
-      <span data-order data-order-tracking-number><%= t("order-following.nd") %></span>
-    </a>
-    <br>
-    Nom du client :
-    <span data-order data-order-user-name></span><br>
+    <h3>Détails de la commande</h3>
+    <h4>Nom du client</h4>
+    <span data-order data-order-user-name></span>
+    <table class="informations">
+      <tr>
+        <td>
+          <h4>Date</h4>
+          <span data-order data-order-date></span>
+        </td>
+        <td>
+          <h4>Numéro de commande</h4>
+          <span data-order data-order-id></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Statut</h4>
+          <span data-order data-order-status></span>
+        </td>
+        <td>
+          <h4>Numéro de suivi</h4>
+          <a href="#" data-order data-order-tracking-url>
+            <span data-order data-order-tracking-number><%= t("order-following.nd") %></span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="products">
+      <thead>
+        <tr>
+          <th>Article</th>
+          <th>Prix</th>
+          <th>Quantité</th>
+          <th>Prix total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="component__little-product">
+              <img src="#" alt="product-image" data-product="image">
+              <span class="name" data-product="name"></span>
+            </div>
+          </td>
+          <td data-product="price" class="price"></td>
+          <td data-product="quantity"></td>
+          <td data-product="total" class="price"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="controls">
+      <%= link_to 'accueil', '/', class: 'btn btn-main' %>
+    </div>
   </div>
 </section>

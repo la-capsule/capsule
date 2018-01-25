@@ -6,6 +6,7 @@ class FollowOrder {
     if (this.form != null) {
       this.order = this.form.querySelector("input[name='id']")
       this.response = document.getElementById(`follow-${this.keyword}-response`)
+      this.responseProduct = this.response.querySelector('table.products tbody')
       this.form.addEventListener('submit', this.getOrder.bind(this))
     }
   }
@@ -22,6 +23,8 @@ class FollowOrder {
     this.response.classList.remove('hide')
 
     let dataOrder = this.response.querySelectorAll(`[data-${this.keyword}]`)
+
+    this.productList(json['products'])
 
     for (let i = 0; i < dataOrder.length; i++) {
       let keys = Object.keys(dataOrder[i].dataset)
@@ -54,6 +57,36 @@ class FollowOrder {
       data = data[k[i]]
     }
     return data
+  }
+  productList (products) {
+    let el = this.responseProduct.querySelector('tr')
+    for (let k in products) {
+      if (parseInt(k) > 0) {
+        el = this.addProduct()
+      }
+      this.productLayout(products[k], el)
+    }
+  }
+  addProduct () {
+    let el = this.responseProduct.querySelector('tr').cloneNode(true)
+    // el.querySelector('[data-name]').innerHTML
+    this.responseProduct.appendChild(el)
+    return el
+  }
+  productLayout (p, el) {
+    let lines = el.querySelectorAll('[data-product]')
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].dataset.product == 'image') {
+        lines[i].src = p[lines[i].dataset.product]
+      } else if (lines[i].dataset.product == 'name') {
+        lines[i].innerHTML = p['name']
+        for (let k = 0; k < p['custom'].length; k++) {
+          lines[i].innerHTML += ' - ' + Object.values(p['custom'][k])
+        }
+      } else {
+        lines[i].innerHTML = p[lines[i].dataset.product]
+      }
+    }
   }
 }
 

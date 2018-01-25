@@ -1,0 +1,12 @@
+@import "partials/about-creator/text-grid";
+@import "partials/about/faq";
+section#about {
+  h1 {
+    font-size: 3.75em;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+  }
+}

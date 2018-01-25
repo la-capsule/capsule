@@ -2,6 +2,7 @@
 - Responsive
   - Product page
   - Catalog page
+  - Order page
 
 
 ## Peaufinage

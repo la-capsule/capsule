@@ -1,0 +1,14 @@
+<div id="informations">
+  <% t('about.informations').each_with_index do |c, i| %>
+    <div class="container text-grid <%= i.even? ? "container-img-right" : "container-img-left" %>">
+      <%= image_tag data.pages.about.informations.images[i] unless i.even? %>
+      <div class="text">
+        <% c.each do |k, v| %>
+          <%= content_tag :h2, v if k.to_s.include?('title') %>
+          <%= content_tag :p, v unless k.to_s.include?('title') %>
+        <% end %>
+      </div>
+      <%= image_tag data.pages.about.informations.images[i] if i.even? %>
+    </div>
+  <% end %>
+</div>

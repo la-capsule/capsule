@@ -1,3 +1,5 @@
+@import 'partials/about-creator/text-grid';
+
 section#creator {
   h1 {
     font-size: 3.250em;
@@ -5,40 +7,6 @@ section#creator {
     text-transform: uppercase;
     width: 67%;
     margin: 0 auto;
-  }
-  p {
-    font-size: 1.250em;
-    line-height: 1.656em;
-    margin-top: .5em;
-    margin-bottom: 1.5em;
-  }
-  .container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 3em 0 6.5em;
-    .text {
-      width: auto;
-      background: $soft-white;
-      padding-top: 1em;
-      padding-bottom: 1em;
-    }
-    img {
-      width: 45%;
-      margin-top: 2em;
-    }
-    &-img-right {
-      .text {
-        padding-left: 13%;
-        padding-right: 4.375em;
-      }
-    }
-    &-img-left {
-      .text {
-        padding-right: 13%;
-        padding-left: 4.375em;
-      }
-    }
   }
   .socials {
     display: flex;

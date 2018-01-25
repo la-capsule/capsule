@@ -7,7 +7,7 @@ slug: creator
 
   <div id="who-are-you">
     <% t('creator.description').each_with_index do |c, i| %>
-      <div class="container <%= i.even? ? "container-img-right" : "container-img-left" %>">
+      <div class="container text-grid <%= i.even? ? "container-img-right" : "container-img-left" %>">
         <%= image_tag data.pages.creator.images[i] unless i.even? %>
         <div class="text">
           <% c.each do |p| %>

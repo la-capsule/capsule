@@ -70,6 +70,24 @@ fr:
 
   about:
     h1: "A propos"
+    informations:
+      -
+        title: Qu’est-ce que Capsule Bordeaux?
+        description:
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
+          - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+      -
+        title: Qu’est-ce que Capsule Bordeaux?
+        description:
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
+          - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+      -
+        title: Qu’est-ce que Capsule Bordeaux?
+        description:
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
+        title2: Qu’est-ce que Capsule Bordeaux?
+        description2:
+          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
     faq:
       -
         question: Travel Prudently Luggage And Carry On Worries

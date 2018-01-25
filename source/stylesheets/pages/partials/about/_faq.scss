@@ -18,6 +18,7 @@ section#about #faq {
       display: block;
       cursor: pointer;
       user-select: none;
+      color: $primary-color;
       &:after {
         content: '';
         display: inline-block;

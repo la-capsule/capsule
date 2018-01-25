@@ -35,3 +35,77 @@
     name: Premier produit
     path: premier-produit
     description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+- id: 1
+  price:
+    usd: 20
+    eur: 22
+  max_quantity: 10
+  shipping:
+    weight: 2000
+    width: 100
+    length: 100
+    height: 100
+  options:
+    colors:
+      inStocks:
+        grey: '#696969'
+        green: '#93D18A'
+        red: '#E68B8B'
+      outOfStocks:
+        blue: 'blue'
+    sizes:
+      inStocks:
+        - S
+        - M
+      outOfStocks:
+        - L
+        - XL
+  image:
+    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
+    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
+    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
+  en:
+    name: First product
+    path: first-product
+    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+  fr:
+    name: Premier produit
+    path: premier-produit
+    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+- id: 1
+  price:
+    usd: 20
+    eur: 22
+  max_quantity: 10
+  shipping:
+    weight: 2000
+    width: 100
+    length: 100
+    height: 100
+  options:
+    colors:
+      inStocks:
+        grey: '#696969'
+        green: '#93D18A'
+        red: '#E68B8B'
+      outOfStocks:
+        blue: 'blue'
+    sizes:
+      inStocks:
+        - S
+        - M
+      outOfStocks:
+        - L
+        - XL
+  image:
+    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
+    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
+    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
+  en:
+    name: First product
+    path: first-product
+    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+  fr:
+    name: Premier produit
+    path: premier-produit
+    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.

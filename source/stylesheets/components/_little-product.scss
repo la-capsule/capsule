@@ -1,0 +1,40 @@
+.component__little-product {
+  position: relative;
+  display: flex;
+  width: 30%;
+  padding: 2em;
+  text-align: right;
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    margin-bottom: 1.2em;
+  }
+  .name,
+  .price {
+    display: block;
+  }
+  .name {
+    font-size: .75em;
+    margin-bottom: 1.2em;
+    font-weight: 900;
+  }
+  .price {
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: $primary-gradient-invert;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+}

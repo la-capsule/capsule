@@ -63,7 +63,8 @@ en:
       - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations.
       - Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
 
-
+  catalog:
+    h1: "The collection"
 
   about:
     h1: "About"

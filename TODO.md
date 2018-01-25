@@ -1,6 +1,7 @@
 # TODO
-- Front-end integration
-- Customize the cart
+- Responsive
+  - Product page
+  - Catalog page
 
 
 ## Peaufinage

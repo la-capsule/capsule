@@ -1,0 +1,75 @@
+section#catalog {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    font-size: 3.75em;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 1.2em;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-left: 5em;
+    margin-bottom: 4.5em;
+    .component__little-product {
+      flex-wrap: wrap;
+      flex-shrink: 1;
+      flex-direction: column;
+    }
+    .btn {
+      font-weight: 900;
+      font-size: .85em;
+      transition: all .2s ease-in-out .1s;
+      visibility: hidden;
+    }
+    .number {
+      font-size: 1.125em;
+      font-weight: 900;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        margin-top: .3em;
+        width: 300%;
+        height: 2px;
+        background-color: $black;
+        border: none;
+      }
+    }
+    &-left {
+      float: left;
+    }
+    &-right {
+      float: right;
+      flex-direction: row-reverse;
+      .component__little-product {
+        text-align: left;
+        img {
+          left: 100%;
+        }
+      }
+      &:hover {
+        .component__little-product:after {
+          right: 0!important;
+          left: -110%;
+        }
+      }
+    }
+    &:hover {
+      .btn {
+        visibility: visible;
+      }
+      .component__little-product {
+        &:after {
+          right: -110%;
+        }
+      }
+    }
+  }
+}

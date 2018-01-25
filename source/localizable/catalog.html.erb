@@ -1,12 +1,21 @@
 ---
 slug: catalog
 ---
-
-<% data.products.each_with_index do |b, index| %>
-  <% link_to b[locale].path do %>
-    <%= b[locale].name %>
-    <%= number_to_currency(b.price.eur, :unit => "€") %>
+<section id="catalog">
+  <h1><%= t('catalog.h1') %></h1>
+  <% data.products.each_with_index do |b, index| %>
+    <div class="product <%= index.even? ? "product-left" : "product-right" %>" data-product-id="<%= b.id %>">
+      <div class="component__little-product">
+        <%= image_tag b.image.face %>
+        <span class="name">
+          <%= b[locale].name %>
+        </span>
+        <span class="price">
+          <%= number_to_currency(b.price.eur, :unit => "€") %>
+        </span>
+      </div>
+      <%= link_to 'détails', b[locale].path, class: 'btn btn-outline btn-outline-white' %>
+      <span class="number"><%= sprintf '%02d', index + 1 %></span>
+    </div>
   <% end %>
-  <%= link_to 'Voir plus', b[locale].path, class: 'btn btn-main' %>
-  <br><br>
-<% end %>
+</section>

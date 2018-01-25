@@ -11,6 +11,7 @@
   cursor: pointer;
   text-align: center;
   color: #FFF;
+  transition: .2s;
   &:hover {
     box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em #000;
   }
@@ -27,6 +28,10 @@
     &-white {
       border-color: #FFF;
       color: #FFF;
+    }
+    &-blue {
+      border-color: $primary-color;
+      color: $black;
     }
     &:hover {
       box-shadow: inset 0 0 0 0.1em #fff;

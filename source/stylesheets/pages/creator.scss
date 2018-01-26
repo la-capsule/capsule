@@ -71,4 +71,17 @@ section#creator {
       }
     }
   }
+  @media #{$classicPhone} {
+    .socials {
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 2em auto 0;
+      a {
+        margin-bottom: 1.2em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }

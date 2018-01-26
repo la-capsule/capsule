@@ -50,9 +50,10 @@
   #snipcart-items-list {
     .snip-table__item {
       border-bottom: 1px solid rgba(0,0,0,.17);
+      padding-top: 1.5em;
       padding-bottom: 3em;
       td:first-child {
-        background: $primary-gradient;
+        background: $primary-gradient-invert;
         padding: 0;
         padding-top: 2em;
         padding-right: 2em;
@@ -202,6 +203,8 @@
     background-image: image_url('icons/close.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1400;
   }
   .snip-product__remove {
     color: inherit;

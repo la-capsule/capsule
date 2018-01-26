@@ -118,6 +118,7 @@ section#catalog {
     width: 100%;
     h1 {
       text-align: center;
+      font-size: 2.2em;
     }
     .product {
       margin-left: 0;
@@ -149,6 +150,8 @@ section#catalog {
         left: inherit!important;
         right: 1em;
         transform: none;
+        max-width: 44%;
+        height: auto;
       }
       &:hover::after {
         left: 0!important;
@@ -160,6 +163,9 @@ section#catalog {
     }
   }
   @media #{$mediumPhone} {
+    h1 {
+      font-size: 1.8em;
+    }
     .product {
       .name {
         margin-bottom: 4em;

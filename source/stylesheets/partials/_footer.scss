@@ -31,4 +31,7 @@ footer {
       width: 70%;
     }
   }
+  @media #{$classicPhone} {
+    margin-top: 5em;
+  }
 }

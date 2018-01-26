@@ -1,0 +1,124 @@
+.snip-layout {
+  background: #FFF;
+  padding: 0;
+  font-family: $primary-font!important;
+  #snipcart-main-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .snip-layout__main-container {
+    max-width: none;
+    height: 100%;
+  }
+  #snipcart-header {
+    background: none;
+    color: $black;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 2em auto 0;
+    z-index: 2;
+    #snipcart-title {
+      font-size: 3.25em;
+      font-weight: 900;
+    }
+  }
+  #snipcart-items {
+    #snipcart-items-header th {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  #snipcart-items-list {
+    .snip-table__item {
+      border-bottom: 1px solid rgba(0,0,0,.17);
+    }
+    .snip-customfields {
+      display: none;
+    }
+  }
+  #snipcart-sub-content {
+    width: 70%;
+    margin: 7em auto 0;
+    position: absolute;
+    top: 6.5em;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  #snipcart-steps {
+    width: 70%;
+    margin: 0 auto;
+    background: none;
+    .snip-step__item {
+      background: none;
+      border: none;
+      border-bottom: 2px solid $black;
+      &.js-active {
+        border-bottom: 2px solid $primary-color;
+      }
+      i {
+        display: none;
+      }
+    }
+  }
+  #snipcart-actions {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #snipcart-header-total {
+    display: none!important;
+  }
+  .snipcart-step {
+    height: 100%;
+    form {
+      label {
+        text-transform: capitalize;
+        color: $black;
+      }
+      input[type="text"] {
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid rgba(52, 52, 52, 35);
+      }
+    }
+  }
+  .snip-product__empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #snipcart-close {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 1em;
+    background-image: image_url('icons/close.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .snip-product__remove {
+    color: inherit;
+    padding-bottom: 8px;
+    &:hover {
+      color: red;
+    }
+    &:before {
+      content: 'remove';
+      font-size: .5em;
+      font-weight: 200;
+      font-family: $primary-font;
+      transition: .2s;
+    }
+  }
+  #snipcart-close i {
+    display: none;
+  }
+  #snipcart-footer {
+    display: none;
+  }
+}

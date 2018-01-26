@@ -1,9 +1,11 @@
-.component__product-how-many {
+.component__product-how-many,
+.snip-quantity-trigger {
   display: flex;
   width: 6em;
   align-items: center;
   justify-content: space-between;
-  button {
+  button,
+  .snip-quantity-trigger__btn {
     appearance: none;
     border: none;
     display: inline-block;
@@ -13,10 +15,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     outline: none;
-    &.more {
+    &:before {
+      content: '';
+      display: none;
+    }
+    &.more,
+    &.snip-quantity-trigger__btn--add {
       background-image: image_url('icons/buy/more.svg');
     }
-    &.less {
+    &.less,
+    &.snip-quantity-trigger__btn--minus {
       background-image: image_url('icons/buy/less.svg');
     }
   }

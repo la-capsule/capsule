@@ -2,12 +2,23 @@
   background: #FFF;
   padding: 0;
   font-family: $primary-font!important;
+  .snip-table {
+    td, tr, th {
+      border-bottom: none;
+    }
+    .snip-table__body {
+      border-top: none;
+    }
+  }
   #snipcart-main-content {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+  }
+  #snipcart-global-loader:before {
+    background-color: $primary-color;
   }
   .snip-layout__main-container {
     max-width: none;
@@ -30,11 +41,43 @@
       &:nth-child(2) {
         display: none;
       }
+      &:nth-last-child(2) {
+        color: $black!important;
+        font-weight: 900;
+      }
     }
   }
   #snipcart-items-list {
     .snip-table__item {
       border-bottom: 1px solid rgba(0,0,0,.17);
+      padding-bottom: 3em;
+      td:first-child {
+        background: $primary-gradient;
+        padding: 0;
+        padding-top: 2em;
+        padding-right: 2em;
+        float: right;
+        width: 80%;
+        .snip-product__thumbnail {
+          transform: translateX(-50%);
+          height: inherit;
+          margin-right: inherit;
+        }
+        h2 {
+          float: right;
+          margin: 0;
+          transform: translate(5%, -50%);
+        }
+        p {
+          display: none;
+        }
+      }
+      td:nth-child(4),
+      td:nth-child(5) {
+        font-size: 1.125em;
+        color: $black;
+        font-weight: bold;
+      }
     }
     .snip-customfields {
       display: none;
@@ -57,20 +100,79 @@
       background: none;
       border: none;
       border-bottom: 2px solid $black;
+      align-items: flex-end;
+      padding-bottom: 8px;
       &.js-active {
         border-bottom: 2px solid $primary-color;
       }
       i {
         display: none;
       }
+      p {
+        display: block!important;
+        text-transform: unset;
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+  #snipcart-shippings-list {
+    .snip-product--selectable-item {
+      background: image_url("icons/checkbox.svg") no-repeat 0 top;
+      &.js-selected {
+        background-image: image_url("icons/checkbox-checked.svg")
+      }
+      p {
+        color: $black;
+        font-weight: 200;
+        margin-top: 1em;
+      }
     }
   }
   #snipcart-actions {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    border-top: none;
+  }
+  .snip-actions {
+    .snip-btn {
+      display: inline-block;
+      outline: none;
+      appearance: none;
+      padding: .2em 1.75em;
+      border: none;
+      border-radius: 3em;
+      transition: 0.2s;
+      cursor: pointer;
+      text-align: center;
+      color: #FFF;
+      transition: .2s;
+    }
+    .snip-btn--right {
+      background-color: $primary-color;
+      &:hover {
+        box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em $primary-color;
+      }
+    }
+    .snip-btn--left {
+      background: transparent;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $primary-color;
+      color: $black;
+    }
   }
   #snipcart-header-total {
     display: none!important;
+  }
+  .snip-quantity-trigger {
+    justify-content: space-between;
+    width: 80%;
+    .snip-quantity-trigger__btn {
+      background-color: #FFF;
+      padding: 0;
+      height: 1.5em;
+      width: 1.5em;
+    }
   }
   .snipcart-step {
     height: 100%;

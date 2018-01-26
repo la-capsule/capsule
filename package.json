@@ -15,8 +15,6 @@
   "author": "Bastien Robert",
   "homepage": "https://github.com/ptut2018/eshop#readme",
   "dependencies": {
-    "vue": "^2.2.4",
-    "vue-resource": "^1.3.5",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
@@ -39,9 +37,6 @@
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "template-html-loader": "0.0.3",
-    "vue-hot-reload-api": "^1.2.2",
-    "vue-html-loader": "^1.0.0",
-    "vue-loader": "^7.3.0",
     "webpack": "^1.10.5"
   }
 }

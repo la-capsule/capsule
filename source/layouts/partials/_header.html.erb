@@ -1,8 +1,8 @@
 <header <%= "class= big-header" if is_current_path?('homepage') %>>
   <div id="menu"></div>
   <% link_to uri_root_path, class: (is_current_path?('homepage') ? 'logo-container logo-large' : 'logo-container') do %>
-    <%= image_tag('logo.svg', id: 'logo') unless is_current_path?('homepage') %>
-    <%= image_tag('logo-large.svg', id: 'logo') if is_current_path?('homepage') %>
+    <%= image_tag 'logo.svg', id: 'logo', class: 'logo-small' unless is_current_path?('homepage') %>
+    <%= image_tag 'logo-large.svg', id: 'logo', class: ('logo-mobile' unless is_current_path?('homepage')) %>
   <% end %>
   <div class="snipcart-summary">
     <a href="#" class="snipcart-checkout">

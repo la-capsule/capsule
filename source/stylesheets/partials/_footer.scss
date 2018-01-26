@@ -45,4 +45,9 @@ footer {
       display: block;
     }
   }
+  @media #{$height} {
+    &.visible {
+      display: none;
+    }
+  }
 }

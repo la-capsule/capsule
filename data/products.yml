@@ -1,111 +1,212 @@
 - id: 1
   price:
-    usd: 20
-    eur: 22
-  max_quantity: 10
+    usd: 35
+    eur: 28
+  max_quantity: 3
   shipping:
-    weight: 2000
-    width: 100
-    length: 100
-    height: 100
+    weight: 200
+    width: 45
+    length: 45
+    height: 45
   options:
     colors:
       inStocks:
-        grey: '#696969'
-        green: '#93D18A'
-        red: '#E68B8B'
-      outOfStocks:
-        blue: 'blue'
-    sizes:
-      inStocks:
-        - S
-        - M
-      outOfStocks:
-        - L
-        - XL
+        green: '#bfc672'
+        purple: '#6f7bfb'
   image:
-    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
-    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
-    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
+    left: products/1/b1-2.png
+    face: products/1/b1-1.png
+    right: products/1/b1-3.png
   en:
-    name: First product
-    path: first-product
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+    name: Alga (Creole)
+    path: alga
+    description: "Gold-filled and glass beads - Handmade - No contact: water, perfume"
   fr:
-    name: Premier produit
-    path: premier-produit
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
-- id: 1
+    name: Alga (créole)
+    path: alga
+    description: "Plaqué or et perles en verre - Fait main - Aucun contact : eau, parfum"
+- id: 2
   price:
-    usd: 20
-    eur: 22
-  max_quantity: 10
+    usd: 95
+    eur: 75
+  max_quantity: 2
   shipping:
-    weight: 2000
-    width: 100
-    length: 100
-    height: 100
-  options:
-    colors:
-      inStocks:
-        grey: '#696969'
-        green: '#93D18A'
-        red: '#E68B8B'
-      outOfStocks:
-        blue: 'blue'
-    sizes:
-      inStocks:
-        - S
-        - M
-      outOfStocks:
-        - L
-        - XL
+    weight: 200
+    width: 55
+    length: 55
+    height: 55
   image:
-    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
-    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
-    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
+    left: products/2/b2-2.png
+    face: products/2/b2-1.png
+    right: products/2/b2-3.png
   en:
-    name: First product
-    path: first-product
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+    name: Ana's long necklace
+    path: ana-necklace
+    description: "Gold filled and pompom - Handmade - No contact: water, perfume"
   fr:
-    name: Premier produit
-    path: premier-produit
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
-- id: 1
+    name: Sautoir Ana
+    path: sautoir-ana
+    description: "Plaqué or et pompom - Fait main - Aucun contact : eau, parfum"
+- id: 3
   price:
-    usd: 20
-    eur: 22
-  max_quantity: 10
+    usd: 47
+    eur: 37.5
+  max_quantity: 1
   shipping:
-    weight: 2000
-    width: 100
-    length: 100
-    height: 100
+    weight: 200
+    width: 30
+    length: 30
+    height: 30
+  image:
+    face: products/3/b3.png
+  en:
+    name: Silver Pistil (Creole)
+    path: silder-pistil
+    description: "925 silver - Handmade - No contact: water, perfume"
+  fr:
+    name: Pistil Argent (créole)
+    path: pistil-argent
+    description: "Argent 925 - Fait main - Aucun contact : eau, parfum"
+- id: 4
+  price:
+    usd: 47
+    eur: 37
+  max_quantity: 1
+  shipping:
+    weight: 20
+    width: 420
+    length: 420
+    height: 250
   options:
     colors:
       inStocks:
-        grey: '#696969'
-        green: '#93D18A'
-        red: '#E68B8B'
-      outOfStocks:
-        blue: 'blue'
-    sizes:
-      inStocks:
-        - S
-        - M
-      outOfStocks:
-        - L
-        - XL
+        green: '#bfc672'
+        purple: '#6f7bfb'
   image:
-    left: https://unsplash.com/photos/UCZF1sXcejo/download?force=true
-    face: https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
-    right: https://unsplash.com/photos/yWwob8kwOCk/download?force=true
+    face: products/4/b4.png
   en:
-    name: First product
-    path: first-product
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+    name: Nia necklace
+    path: nia-necklace
+    description: "925 silver and purple glass beads - Handmade - No contact: water, perfume"
   fr:
-    name: Premier produit
-    path: premier-produit
-    description: When it comes to eye make-up you need to think and then apply because eyes talk louder than words. The type of make-up that you apply on your eyes can talk loud about the type of person you really are.
+    name: Collier Nia
+    path: collier-nia
+    description: "Argent 925 et perles en verre violette - Fait main - Aucun contact : eau, parfum"
+- id: 5
+  price:
+    usd: 50
+    eur: 40
+  max_quantity: 1
+  shipping:
+    weight: 200
+    width: 30
+    length: 30
+    height: 30
+  options:
+    colors:
+      inStocks:
+        gold: '#eee3bd'
+        grenat: '#ff5350'
+        white: '#ffffff'
+  image:
+    face: products/5/b5.png
+  en:
+    name: Pastille earrings
+    path: pastille-earrings
+    description: "Gold filled - Handmade - No contact: water, perfume"
+  fr:
+    name: Boucles d'oreilles Pastille
+    path: boucles-oreilles-pastille
+    description: "Plaqué or - Fait main - Aucun contact : eau, parfum"
+- id: 6
+  price:
+    usd: 70
+    eur: 56
+  max_quantity: 1
+  shipping:
+    weight: 400
+    width: 300
+    length: 300
+    height: 150
+  image:
+    face: products/6/b6.png
+  en:
+    name: Pastille Necklace
+    path: pastille-necklace
+    description: "Gold filled - Handmade - No contact: water, perfume"
+  fr:
+    name: Collier Pastille
+    path: collier-pastille
+    description: "Plaqué or - Fait main - Aucun contact : eau, parfum"
+- id: 7
+  price:
+    usd: 64
+    eur: 50
+  max_quantity: 3
+  shipping:
+    weight: 200
+    width: 390
+    length: 390
+    height: 30
+  image:
+    left: products/7/b7-1.png
+    face: products/7/b7-2.png
+  en:
+    name: Héloïse Necklace
+    path: heloise-necklace
+    description: "Gold Plated & semiprecious stone - Handmade - No contact: water, perfume"
+  fr:
+    name: Collier Héloïse
+    path: collier-heloise
+    description: "Plaqué Or & pière semi-précieuses - Fait main - Aucun contact : eau, parfum"
+- id: 8
+  price:
+    usd: 50
+    eur: 40
+  max_quantity: 3
+  shipping:
+    weight: 200
+    width: 140
+    length: 140
+    height: 30
+  image:
+    left: products/8/b8-2.png
+    face: products/8/b8-1.png
+    right: products/8/b8-3.png
+  en:
+    name: Bracelet
+    path: bracelet
+    description: "Argent 925 - Handmade - No contact: water, perfume"
+  fr:
+    name: Bracelet
+    path: bracelet
+    description: "Argent 925 - Fait main - Aucun contact : eau, parfum"
+- id: 9
+  price:
+    usd: 50
+    eur: 40
+  max_quantity: 3
+  shipping:
+    weight: 200
+    width: 40
+    length: 40
+    height: 30
+  options:
+    colors:
+      inStocks:
+        gold: '#FFD700'
+        red: '#d11b2d'
+        rose: '#eea19d'
+        grenat: '#ff5350'
+  image:
+    left: products/9/b9-2.png
+    face: products/9/b9-1.png
+    right: products/9/b9-3.png
+  en:
+    name: Maroussia earrings
+    path: maroussia-earrings
+    description: "Gold Plated & semiprecious stone - Handmade - No contact: water, perfume"
+  fr:
+    name: Boucles d'oreilles Maroussia
+    path: boucles-oreilles-maroussia
+    description: "Plaqué Or & pière semi-précieuses - Fait main - Aucun contact : eau, parfum"

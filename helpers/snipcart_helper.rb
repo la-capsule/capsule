@@ -24,11 +24,13 @@ module SnipcartHelper
       "data-item-height" => p.shipping.height
     }
 
-    p.options.each_with_index do |option, i|
-      data = snipcart_array_it(option[1].inStocks)
-      args["data-item-custom#{i}-name"] = option[0]
-      args["data-item-custom#{i}-options"] = data
-      args["data-item-custom#{i}-value"] = ''
+    if p.options
+      p.options.each_with_index do |option, i|
+        data = snipcart_array_it(option[1].inStocks)
+        args["data-item-custom#{i}-name"] = option[0]
+        args["data-item-custom#{i}-options"] = data
+        args["data-item-custom#{i}-value"] = ''
+      end
     end
 
     content_tag :button, args do

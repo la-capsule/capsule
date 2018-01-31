@@ -12,8 +12,12 @@ dynamic:
 <section id="product" data-item-id="<%= product.id %>">
 
   <div class="product-image">
-    <% product.image.each_with_index do |(alt, image), i| %>
-      <%= image_tag image, alt: alt, class: (i == product.image.count / 2 ? 'select' : '') %>
+    <% if product.image.kind_of?(Array) %>
+      <% product.image.each_with_index do |(alt, image), i| %>
+        <%= image_tag image, alt: alt, class: (i == product.image.count / 2 ? 'select' : '') %>
+      <% end %>
+    <% else %>
+      <%= image_tag product.image.face, alt: "Image", class: 'select' %>
     <% end %>
   </div>
 
@@ -22,30 +26,32 @@ dynamic:
     <p><%= product[locale].description %></p>
 
     <div class="options">
-      <% if product.options.colors %>
-        <form id="colors" class="option-picker">
-          <h2>Couleur</h2>
-          <% product.options.colors.inStocks&.each do |k, color| %>
-            <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
-          <% end %>
-          <% product.options.colors.outOfStocks&.each do |k, color| %>
-            <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
-          <% end %>
+      <% if product.options %>
+        <% if product.options.colors %>
+          <form id="colors" class="option-picker">
+            <h2>Couleur</h2>
+            <% product.options.colors.inStocks&.each do |k, color| %>
+              <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio">
+            <% end %>
+            <% product.options.colors.outOfStocks&.each do |k, color| %>
+              <input type="radio" name="color" value="<%= k %>" data-color="<%= color %>" class="component__product-radio" disabled>
+            <% end %>
+          </form>
+        <% end %>
+        <% if product.options.sizes %>
+        <form id="sizes" class="option-picker">
+          <h2>Taille</h2>
+          <select name="size" class="component__product-select">
+            <option value="" selected disabled><%= t('snipcart.sizes') %></option>
+            <% product.options.sizes.inStocks.each do |size| %>
+              <option value="<%= size %>"><%= size %></option>
+            <% end %>
+            <% product.options.sizes.outOfStocks.each do |size| %>
+              <option value="<%= size %>" disabled><%= size %></option>
+            <% end %>
+          </select>
         </form>
-      <% end %>
-      <% if product.options.sizes %>
-      <form id="sizes" class="option-picker">
-        <h2>Taille</h2>
-        <select name="size" class="component__product-select">
-          <option value="" selected disabled><%= t('snipcart.sizes') %></option>
-          <% product.options.sizes.inStocks.each do |size| %>
-            <option value="<%= size %>"><%= size %></option>
-          <% end %>
-          <% product.options.sizes.outOfStocks.each do |size| %>
-            <option value="<%= size %>" disabled><%= size %></option>
-          <% end %>
-        </select>
-      </form>
+        <% end %>
       <% end %>
       <form class="quantity-picker">
         <h2>Qté</h2>

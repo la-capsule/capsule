@@ -19,7 +19,9 @@ activate :directory_indexes
 # Localization
 activate :i18n, :mount_at_root => :fr
 # Using asset helpers
-activate :asset_hash
+activate :asset_hash  do |f|
+  f.ignore = 'images/products/*'
+end
 # Middleman i18n can't convert page URL to another language. This is the solution.
 activate :transpath
 

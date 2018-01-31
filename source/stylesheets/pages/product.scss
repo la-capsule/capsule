@@ -51,8 +51,8 @@ section#product {
     justify-content: left;
     align-items: top;
     flex-wrap: wrap;
-    form:last-child {
-      margin-left: 4em;
+    form:nth-child(2) {
+      margin-right: 4em;
     }
   }
   .options > form:first-child {

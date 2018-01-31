@@ -55,7 +55,6 @@
       td:first-child {
         background: $primary-gradient-invert;
         padding: 0;
-        padding-top: 2em;
         padding-right: 2em;
         float: right;
         width: 80%;
@@ -67,6 +66,7 @@
         h2 {
           float: right;
           margin: 0;
+          margin-top: 2em;
           transform: translate(5%, -50%);
         }
         p {
@@ -110,7 +110,7 @@
         display: none;
       }
       p {
-        display: block!important;
+        display: block;
         text-transform: unset;
         font-size: 14px;
         width: 100%;
@@ -225,5 +225,43 @@
   }
   #snipcart-footer {
     display: none;
+  }
+  @media #{$classicTablet} {
+    #snipcart-steps .snip-step__item {
+      i {
+        display: inline-block;
+      }
+      p {
+        display: none;
+      }
+    }
+    .snip-table__small-col {
+      margin-top: 0;
+    }
+    .snip-product__remove {
+      top: 0;
+      right: 0;
+    }
+    .snip-quantity-trigger .snip-quantity-trigger__btn {
+      background-position: center;
+    }
+    #snipcart-items-list .snip-table__item td:first-child {
+      background: none;
+      float: none;
+      padding: 0;
+      h2 {
+        float: left;
+      }
+    }
+    .snip-actions {
+      #snipcart-previous,
+      #snipcart-next {
+        display: block;
+        width: 100%;
+      }
+      #snipcart-next {
+        margin-top: 1em;
+      }
+    }
   }
 }

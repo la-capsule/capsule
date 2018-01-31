@@ -10,7 +10,12 @@
   transition: 0.2s;
   cursor: pointer;
   color: #FFF;
+  margin-bottom: 3em;
   &:hover {
     box-shadow: inset 0 0 0 0.2em #fff, 0 0 0 0.2em #FC5143;
+  }
+  @media #{$classicTablet} {
+    display: block;
+    margin: 0 auto;
   }
 }

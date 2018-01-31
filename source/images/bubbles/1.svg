@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="592px" height="714px" viewBox="0 0 592 714" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="100%" cy="2.8665461%" fx="100%" fy="2.8665461%" r="136.611146%" gradientTransform="translate(1.000000,0.028665),scale(0.976096,1.000000),rotate(132.418277),translate(-1.000000,-0.028665)" id="radialGradient-1">
+            <stop stop-color="#82ABF9" offset="0%"></stop>
+            <stop stop-color="#6FB7FA" offset="35.6175009%"></stop>
+            <stop stop-color="#73C5F6" offset="65.1276356%"></stop>
+            <stop stop-color="#83D2F0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="100%" cy="2.8665461%" fx="100%" fy="2.8665461%" r="139.787113%" gradientTransform="translate(1.000000,0.028665),scale(1.000000,0.804487),rotate(125.659331),translate(-1.000000,-0.028665)" id="radialGradient-2">
+            <stop stop-color="#7CA6F9" offset="0%"></stop>
+            <stop stop-color="#8DBFEC" offset="24.3064413%"></stop>
+            <stop stop-color="#83D2F0" offset="54.031808%"></stop>
+            <stop stop-color="#87E3EC" stop-opacity="0.718212183" offset="100%"></stop>
+        </radialGradient>
+        <path d="M95.922486,0.080723741 C107.58231,1.12147695 120.289463,-2.21351995 130.901958,3.20298336 C138.015039,6.83342287 140.947816,16.7387663 144.069824,24.6546058 C151.221783,42.7883703 154.187889,62.7149229 161.49569,80.7732684 C168.615429,98.3668946 185.250627,131.988386 200.610745,148.824469 C235.187216,186.723419 276.676309,176.900854 324.012915,184.909121 C351.52194,189.563016 383.233158,197.938295 407.66133,214.462216 C430.836435,230.138526 440.566613,262.93535 449.87408,288.336167 C488.189269,392.901368 533.37722,472.281853 471.430206,573.896978 C460.313161,592.132884 444.282785,610.007491 424.698654,616.800223 C411.097062,621.517918 361.800375,623.58916 360.418817,623.618816 C335.094396,624.162425 298.296279,625.045526 270.447272,618.791908 C154.569226,592.77098 10.1325858,478.136738 1.94842033,336.359215 C-0.745127791,289.69782 -2.03768152,251.815063 7.62752818,207.497175 C8.02849425,205.658625 34.863479,79.9820297 51.9054084,45.2568329 C57.1335841,34.6037299 67.4189727,28.2816603 76.0429473,21.8135252 L95.922486,0.080723741 Z" id="path-3"></path>
+        <filter x="-13.9%" y="-10.9%" width="127.9%" height="122.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="23" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.510183504   0 0 0 0 0.610889668   0 0 0 0 0.581270208  0 0 0 0.709607111 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="bulle1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(45.000000, 43.000000)">
+        <g id="Group">
+            <path d="M54.6897279,72.8008371 C120.222461,53.7168253 189.930807,83.6290793 227.915999,134.578651 C251.321,165.971801 258.885818,205.099479 287.495673,233.527909 C302.282072,248.220542 336.310891,284.55999 363.649559,290.486999 C430.253916,304.926789 419.911731,290.129015 459.996898,312.016884 C485.781645,326.096236 505.167021,348.402011 514.351441,374.731979 C536.576971,438.448299 520.171321,475.708084 467.552964,522.215828 C399.914292,581.999565 304.508713,552.606472 230.965989,523.68791 C118.324264,479.394789 49.9797979,346.14529 29.9842066,240.348003 C20.3696985,189.477347 13.6037656,141.083979 45.5337646,96.8724067 L54.6897279,72.8008371 Z" id="Path-3" fill="url(#radialGradient-1)" opacity="0.81787817"></path>
+            <g id="Path-2" opacity="0.50537817">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="url(#radialGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

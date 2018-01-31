@@ -5,9 +5,11 @@ class ProductImage {
       for (let i = 0; i < this.els.length; i++) {
         let el = this.els[i]
         this.imgList = el.getElementsByTagName('img')
-        this.dots = []
-        this.addSelector(el)
-        this.process(el)
+        if (this.imgList.length > 1) {
+          this.dots = []
+          this.addSelector(el)
+          this.process(el)
+        }
       }
     }
   }

@@ -11,4 +11,20 @@ section#about {
     margin: 0 auto;
     margin-bottom: 1.2em;
   }
+  .team-bubble {
+    height: 45vw;
+    width: 45vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-image: image_url('bubbles/team-slider.svg');
+    transform: translate(-20%, -85%);
+    z-index: -1;
+  }
+  @media #{$classicTablet} {
+    .team-bubble {
+      display: none;
+    }
+  }
 }

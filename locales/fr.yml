@@ -70,7 +70,7 @@ fr:
     h1: "La collection"
 
   about:
-    h1: "About"
+    h1: "A propos"
     informations:
       -
         title: Qu’est-ce que Capsule Bordeaux?
@@ -117,7 +117,7 @@ fr:
 
 
   creator:
-    name: "Nom du créateur"
+    name: "Aldrane"
     description:
       -
         - ALDRANE est le symbol d’un bout de femme indépendante et autodidacte qui s’attèle quotidiennement à la tâche fastidieuse et ambitieuse du fait main. Passionnée depuis le lycée par la mode, les bijoux et le DIY fin et délicat, elle se déclare en 2015 en tant que créatrice.
@@ -128,7 +128,7 @@ fr:
 
 
   order-following:
-    h1: "Suivie de commande"
+    h1: "Suivi de commande"
     p: "Pour suivre votre commande veuillez renseigner votre identifiant de commande dans la boite ci-dessous et cliquer le bouton « Suivre ». Il vous a été donné sur votre reçu et dans l’e-mail de confirmation que vous avez du recevoir."
     nd: "Non défini"
 

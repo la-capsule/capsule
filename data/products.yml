@@ -13,6 +13,7 @@
       inStocks:
         green: '#bfc672'
         purple: '#6f7bfb'
+        purple: '#cc7722'
   image:
     left: products/1/b1-2.png
     face: products/1/b1-1.png
@@ -27,26 +28,32 @@
     description: "Plaqué or et perles en verre - Fait main - Aucun contact : eau, parfum"
 - id: 2
   price:
-    usd: 95
-    eur: 75
-  max_quantity: 2
+    usd: 50
+    eur: 40
+  max_quantity: 3
   shipping:
     weight: 200
-    width: 55
-    depth: 55
-    height: 55
+    width: 140
+    depth: 140
+    height: 30
+  options:
+    colors:
+      inStocks:
+        red: '#d11b2d'
+        rose: '#eea19d'
+        grenat: '#ff5350'
   image:
     left: products/2/b2-2.png
     face: products/2/b2-1.png
     right: products/2/b2-3.png
   en:
-    name: Ana's long necklace
-    path: ana-necklace
-    description: "Gold filled and pompom - Handmade - No contact: water, perfume"
+    name: Bracelet
+    path: bracelet
+    description: "Gold filled and semi precious stone - Handmade - No contact: water, perfume"
   fr:
-    name: Sautoir Ana
-    path: sautoir-ana
-    description: "Plaqué or et pompom - Fait main - Aucun contact : eau, parfum"
+    name: Bracelet
+    path: bracelet
+    description: "Plaqué or et pierre semi précieuse - Fait main - Aucun contact : eau, parfum"
 - id: 3
   price:
     usd: 47
@@ -77,11 +84,6 @@
     width: 420
     depth: 420
     height: 250
-  options:
-    colors:
-      inStocks:
-        green: '#bfc672'
-        purple: '#6f7bfb'
   image:
     face: products/4/b4.png
   en:
@@ -91,7 +93,7 @@
   fr:
     name: Collier Nia
     path: collier-nia
-    description: "Argent 925 et perles en verre violette - Fait main - Aucun contact : eau, parfum"
+    description: "Argent 925 et perles en verre violet - Fait main - Aucun contact : eau, parfum"
 - id: 5
   price:
     usd: 50
@@ -102,12 +104,6 @@
     width: 30
     depth: 30
     height: 30
-  options:
-    colors:
-      inStocks:
-        gold: '#eee3bd'
-        grenat: '#ff5350'
-        white: '#ffffff'
   image:
     face: products/5/b5.png
   en:
@@ -140,6 +136,33 @@
     description: "Plaqué or - Fait main - Aucun contact : eau, parfum"
 - id: 7
   price:
+    usd: 95
+    eur: 75
+  max_quantity: 2
+  shipping:
+    weight: 200
+    width: 55
+    depth: 55
+    height: 55
+  options:
+    colors:
+      inStocks:
+        red: '#d11b2d'
+        black: '#000000'
+  image:
+    face: products/7/b7-1.png
+    right: products/7/b7-2.png
+  en:
+    name: Ana's long necklace
+    path: ana-necklace
+    description: "Gold filled and pompom - Handmade - No contact: water, perfume"
+  fr:
+    name: Sautoir Ana
+    path: sautoir-ana
+    description: "Plaqué or et pompom - Fait main - Aucun contact : eau, parfum"
+
+- id: 8
+  price:
     usd: 64
     eur: 50
   max_quantity: 3
@@ -148,9 +171,16 @@
     width: 390
     depth: 390
     height: 30
+  options:
+    colors:
+      inStocks:
+        blue: '#26619c'
+        grenat: '#ff5350'
+        white: '#FFFFFF'
   image:
-    left: products/7/b7-1.png
-    face: products/7/b7-2.png
+    left: products/8/b8-1.png
+    face: products/8/b8-2.png
+    right: products/8/b8-2.png
   en:
     name: Héloïse Necklace
     path: heloise-necklace
@@ -159,28 +189,6 @@
     name: Collier Héloïse
     path: collier-heloise
     description: "Plaqué Or & pière semi-précieuses - Fait main - Aucun contact : eau, parfum"
-- id: 8
-  price:
-    usd: 50
-    eur: 40
-  max_quantity: 3
-  shipping:
-    weight: 200
-    width: 140
-    depth: 140
-    height: 30
-  image:
-    left: products/8/b8-2.png
-    face: products/8/b8-1.png
-    right: products/8/b8-3.png
-  en:
-    name: Bracelet
-    path: bracelet
-    description: "Argent 925 - Handmade - No contact: water, perfume"
-  fr:
-    name: Bracelet
-    path: bracelet
-    description: "Argent 925 - Fait main - Aucun contact : eau, parfum"
 - id: 9
   price:
     usd: 50
@@ -194,10 +202,9 @@
   options:
     colors:
       inStocks:
-        gold: '#FFD700'
-        red: '#d11b2d'
-        rose: '#eea19d'
-        grenat: '#ff5350'
+        white: '#ffffff'
+        blue: '#26619c'
+        brown: '#1e1519'
   image:
     left: products/9/b9-2.png
     face: products/9/b9-1.png

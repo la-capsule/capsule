@@ -35,8 +35,9 @@ section#about #faq {
       }
     }
     &.less {
-      p {
-        display: none;
+      div {
+        max-height: 0;
+        overflow: hidden;
       }
       h3:after {
         content: '+';
@@ -44,6 +45,10 @@ section#about #faq {
     }
     &.more {
       margin-bottom: 1.3em;
+      div {
+        transition: 1.2s;
+        max-height: 500px;
+      }
       h3:after {
         content: '-';
       }

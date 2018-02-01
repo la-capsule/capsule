@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     outline: none;
     background-color: #FFF;
+    cursor: pointer;
     &:before {
       content: '';
       display: none;
@@ -23,6 +24,9 @@
     &.more,
     &.snip-quantity-trigger__btn--add {
       background-image: image_url('icons/buy/more.svg');
+      &.max {
+        opacity: .7;
+      }
     }
     &.less,
     &.snip-quantity-trigger__btn--minus {

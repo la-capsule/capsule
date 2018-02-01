@@ -3,9 +3,11 @@
   <% t('about.faq.description').each_with_index do |q, i| %>
     <div class="question <%= i == 0 ? "more" : "less" %>">
       <h3><%= q[:question] %></h3>
-      <% q[:answer].each do |a| %>
-        <p><%= a %></p>
-      <% end %>
+      <div>
+        <% q[:answer].each do |a| %>
+          <p><%= a %></p>
+        <% end %>
+      </div>
     </div>
   <% end %>
   <div class="component__bubble bubble-2 left"></div>

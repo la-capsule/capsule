@@ -24,9 +24,9 @@ class Counter {
   process (el, c) {
     let n = c.querySelector('span'),
         a = parseInt(n.innerHTML)
-    if (el.classList == 'more' && a < parseInt(this.maxQuantity)) {
+    if (el.classList.contains('more') && a < parseInt(this.maxQuantity)) {
       n.innerHTML = a + 1
-    } else if (el.classList == 'less' && a > 1) {
+    } else if (el.classList.contains('less') && a > 1) {
       n.innerHTML = a - 1
     }
   }

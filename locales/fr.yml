@@ -55,6 +55,9 @@ fr:
         -
           - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
           - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+    details:
+      - Faites vous plaisirs et soutenez les créateurs de votre région
+      - L’équipe Capsule Bordeaux est disponible pour répondre à vos questions 7/7j
     informations:
       name: Son univers
       description:
@@ -70,7 +73,7 @@ fr:
     h1: "La collection"
 
   about:
-    h1: "A propos"
+    h1: "À propos"
     informations:
       -
         title: Qu’est-ce que Capsule Bordeaux?

@@ -4,7 +4,7 @@ slug: catalog
 <section id="catalog">
   <h1><%= t('catalog.h1') %></h1>
   <% data.products.each_with_index do |b, index| %>
-    <div class="product <%= index.even? ? "product-left" : "product-right" %>" data-product-id="<%= b.id %>">
+    <a href="<%= b[locale].path %>" class="product <%= index.even? ? "product-left" : "product-right" %>" data-product-id="<%= b.id %>">
       <div class="component__little-product">
         <%= image_tag b.image.face %>
         <span class="name">
@@ -14,9 +14,9 @@ slug: catalog
           <%= number_to_currency(b.price.eur, :unit => "€") %>
         </span>
       </div>
-      <%= link_to 'détails', b[locale].path, class: 'btn btn-outline btn-outline-white' %>
+      <button class="btn btn-outline btn-outline-white">détails</button>
       <span class="number"><%= sprintf '%02d', index + 1 %></span>
-    </div>
+    </a>
   <% end %>
   <div class="component__bubble bubble-2 right"></div>
 </section>

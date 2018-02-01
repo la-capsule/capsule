@@ -11,6 +11,7 @@
 body {
   color: $black;
   font-family: $primary-font;
+  overflow-x: hidden;
 }
 ::selection {
   background: $primary-color;

@@ -13,6 +13,7 @@ section#about #faq {
       font-weight: 900;
       margin-bottom: 1em;
       padding: .35em 0 .25em;
+      padding-right: 3em;
       border-top: 2px solid $primary-color;
       border-bottom: 2px solid $primary-color;
       display: block;
@@ -21,6 +22,8 @@ section#about #faq {
       color: $primary-color;
       &:after {
         content: '';
+        position: absolute;
+        right: 0;
         display: inline-block;
         border: none;
         color: $primary-color;
@@ -36,18 +39,21 @@ section#about #faq {
         display: none;
       }
       h3:after {
-        content: '-';
+        content: '+';
       }
     }
     &.more {
       margin-bottom: 1.3em;
       h3:after {
-        content: '+';
+        content: '-';
       }
     }
     p {
       font-size: 1.063em;
       line-height: 1.938em;
     }
+  }
+  .component__bubble {
+    transform: translate(-55%, -70%) rotate(186deg);
   }
 }

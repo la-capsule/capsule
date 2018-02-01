@@ -12,6 +12,14 @@ section#homepage #concept {
     line-height: 1.95em;
     text-align: justify;
   }
+  .bubbles-container {
+    :first-child {
+      transform: translate(-45%, -80%);
+    }
+    :last-child {
+      transform: translate(45%, -30%);
+    }
+  }
   @media #{$classicTablet} {
     width: inherit;
     display: block;

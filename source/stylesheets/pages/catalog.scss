@@ -8,6 +8,11 @@ section#catalog {
     font-weight: 900;
     margin-bottom: 1.2em;
   }
+  .component__bubble {
+    position: fixed;
+    top: 0;
+    transform: translate(40%, -35%) rotate(186deg);
+  }
   .product {
     display: flex;
     justify-content: space-between;

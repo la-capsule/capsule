@@ -20,7 +20,7 @@ module SnipcartHelper
       "data-item-quantity" => 1,
       "data-item-weight" => p.shipping.weight,
       "data-item-width" => p.shipping.width,
-      "data-item-length" => p.shipping.length,
+      "data-item-length" => p.shipping.depth,
       "data-item-height" => p.shipping.height
     }
 

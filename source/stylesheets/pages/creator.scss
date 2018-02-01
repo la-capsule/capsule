@@ -15,6 +15,16 @@ section#creator {
     width: 58%;
     margin: 8em auto 3em;
   }
+  .bubbles-container {
+    :first-child {
+      top: 0;
+      transform: translate(65%,-30%);
+    }
+    :last-child {
+      transform: translate(-40%, -20%);
+      z-index: -1;
+    }
+  }
   @media #{$bigTablet} {
     h1 {
       width: 90%;

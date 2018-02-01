@@ -1,0 +1,22 @@
+.component__bubble {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 30em;
+  width: 30em;
+  &.bubble-1 {
+    background-image: image_url('bubbles/1.svg');
+  }
+  &.bubble-2 {
+    background-image: image_url('bubbles/2.svg');
+  }
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+  @media #{$classicTablet} {
+    display: none;
+  }
+}

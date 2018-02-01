@@ -1,7 +1,7 @@
 - id: 1
   price:
-    usd: 35
-    eur: 28
+    usd: 39
+    eur: 31
   max_quantity: 3
   shipping:
     weight: 200
@@ -28,8 +28,8 @@
     description: "Plaqué or et perles en verre - Fait main - Aucun contact : eau, parfum"
 - id: 2
   price:
-    usd: 50
-    eur: 40
+    usd: 54
+    eur: 43
   max_quantity: 3
   shipping:
     weight: 200
@@ -56,8 +56,8 @@
     description: "Plaqué or et pierre semi précieuse - Fait main - Aucun contact : eau, parfum"
 - id: 3
   price:
-    usd: 47
-    eur: 37.5
+    usd: 50
+    eur: 40.5
   max_quantity: 1
   shipping:
     weight: 200
@@ -76,8 +76,8 @@
     description: "Argent 925 - Fait main - Aucun contact : eau, parfum"
 - id: 4
   price:
-    usd: 47
-    eur: 37
+    usd: 51
+    eur: 40
   max_quantity: 1
   shipping:
     weight: 20
@@ -96,8 +96,8 @@
     description: "Argent 925 et perles en verre violet - Fait main - Aucun contact : eau, parfum"
 - id: 5
   price:
-    usd: 50
-    eur: 40
+    usd: 54
+    eur: 43
   max_quantity: 1
   shipping:
     weight: 200
@@ -116,8 +116,8 @@
     description: "Plaqué or - Fait main - Aucun contact : eau, parfum"
 - id: 6
   price:
-    usd: 70
-    eur: 56
+    usd: 73
+    eur: 59
   max_quantity: 1
   shipping:
     weight: 400
@@ -136,8 +136,8 @@
     description: "Plaqué or - Fait main - Aucun contact : eau, parfum"
 - id: 7
   price:
-    usd: 95
-    eur: 75
+    usd: 99
+    eur: 78
   max_quantity: 2
   shipping:
     weight: 200
@@ -163,8 +163,8 @@
 
 - id: 8
   price:
-    usd: 64
-    eur: 50
+    usd: 68
+    eur: 53
   max_quantity: 3
   shipping:
     weight: 200
@@ -191,8 +191,8 @@
     description: "Plaqué Or & pière semi-précieuses - Fait main - Aucun contact : eau, parfum"
 - id: 9
   price:
-    usd: 50
-    eur: 40
+    usd: 54
+    eur: 43
   max_quantity: 3
   shipping:
     weight: 200

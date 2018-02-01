@@ -55,21 +55,22 @@ fr:
         -
           - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
           - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
-        -
-          - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
-          - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
     informations:
-      - Faites vous plaisirs et soutenez les créateurs de votre région
-      - L’équipe Capsule Bordeaux est disponible pour répondre à vos questions 7/7j
+      name: Son univers
+      description:
+        - Aldrane est le symbol d’un bout de femme indépendante et autodidacte qui s’attèle quotidiennement à la tâche fastidieuse et ambitieuse du fait main. Passionnée depuis le lycée par la mode, les bijoux et le DIY fin et délicat, elle se déclare en 2015 en tant que créatrice
+      button: Découvrez Aldrane
     creator:
-      - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations.
-      - Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
+      name: Ses créations
+      description:
+        - Colliers, boucles d’oreilles ou bracelets, ses réalisations se manifestent généralement sous la forme de pièces uniques ou bien, parfois, dans des séries de bijoux semblables.
+      button: Découvrez ses créations
 
   catalog:
     h1: "La collection"
 
   about:
-    h1: "A propos"
+    h1: "About"
     informations:
       -
         title: Qu’est-ce que Capsule Bordeaux?
@@ -77,43 +78,42 @@ fr:
           - Capsule Bordeaux est un e-shop éphémère proposant les produits créés par les créateurs autour de vous que vous ne connaissez pas encore.
           - Nous avons choisi de nous concentrer sur un(e) créateur/créatrice et sur une sélection de ses créations. Chaque mois, vous aurez l’occasion de découvrir un nouvel artisan bordelais, ainsi qu’une sélection coup de coeur des ses produits.
       -
-        title: Notre ambition ?
+        title: Pourquoi nous faire confiance ?
         description:
-          - Avec Capsule Bordeaux, nous souhaitons faire connaître les créateurs autour de vous.
+          - La sécurité et le bien être des créateurs avant tout!
+          - L’équipe de Capsule Bordeaux ne tire aucun bénéfices de toutes les transaction faites sur le site. Notre but est avant tout de faire la promotion de créatrices et créateurs bordelais en manque de visibilité. Avec cette démarche, nous souhaitons avant tout soutenir le commerce local.
       -
         title: Nous, c’est qui ?
         description:
           - Capsule Bordeaux est une initiative étudiante, imaginé par Joshua Richard, Bastien Robert, Mathias Fratani et Emeline Bailleul. Nous ne retirons aucuns profits avec cette plateforme, tout est entièrement reversé aux créateurs, alors n’hésitez pas à les soutenir et partager Capsule Bordeaux.
-        title2: Pourquoi nous faire confiance ?
-        description2:
-          - La sécurité et le bien être des créateurs avant tout!
-          - L’équipe de Capsule Bordeaux ne tire aucun bénéfices de toutes les transaction faites sur le site. Notre but est avant tout de faire la promotion de créatrices et créateurs bordelais en manque de visibilité. Avec cette démarche, nous souhaitons avant tout soutenir le commerce local.
 
     faq:
-      -
-        question: Comment se passe la livraison de mon produit ?
-        answer:
-          - Capsule Bordeaux ne gère pas la livraison, elle est entièrement à la charge de notre créateurs du mois.
-      -
-        question: Combien de temps les produits sont-ils disponibles ?
-        answer:
-          - Nous changeons chaque mois de créateurs, donc chaque créations est disponibles à la vente durant 30 jours environ.
-      -
-        question: Comment faire apparaitre mes produits sur Capsule Bordeaux ?
-        answer:
-          - Capsule Bordeaux est constamment en recherche de créateurs bordelais, vous pouvez nous envoyer un mail avec une sélection de votre créations à l’adresse.
-      -
-        question: Puis-je annuler ou modifier ma commande ?
-        answer:
-          - Actuellement, il n'est pas possible d'annuler ou de modifier votre commande puisque nous préparons celle-ci dès que vous nous confirmez la commande sur le site web.
-      -
-        question: Les articles reçus ne sont pas corrects ou présentent un défaut. Que dois-je faire ?
-        answer:
-          - Si votre produit arrive en mauvaise état, il vous suffit d’envoyer un message au créateur afin de le retourner ou l’échanger.
-      -
-        question: Je souhaite être tenu informé des offres, nouveautés et promotions exclusives. Que dois-je faire ?
-        answer:
-          - Abonnez-vous à notre newsletter ! Vous recevrez par courriel toutes les informations concernant les dernières nouveautés ainsi que des promotions exclusives.
+      name: Questions fréquemment posées
+      description:
+        -
+          question: Comment se passe la livraison de mon produit ?
+          answer:
+            - Capsule Bordeaux ne gère pas la livraison, elle est entièrement à la charge de notre créateurs du mois.
+        -
+          question: Combien de temps les produits sont-ils disponibles ?
+          answer:
+            - Nous changeons chaque mois de créateurs, donc chaque créations est disponibles à la vente durant 30 jours environ.
+        -
+          question: Comment faire apparaitre mes produits sur Capsule Bordeaux ?
+          answer:
+            - Capsule Bordeaux est constamment en recherche de créateurs bordelais, vous pouvez nous envoyer un mail avec une sélection de votre créations à l’adresse.
+        -
+          question: Puis-je annuler ou modifier ma commande ?
+          answer:
+            - Actuellement, il n'est pas possible d'annuler ou de modifier votre commande puisque nous préparons celle-ci dès que vous nous confirmez la commande sur le site web.
+        -
+          question: Les articles reçus ne sont pas corrects ou présentent un défaut. Que dois-je faire ?
+          answer:
+            - Si votre produit arrive en mauvaise état, il vous suffit d’envoyer un message au créateur afin de le retourner ou l’échanger.
+        -
+          question: Je souhaite être tenu informé des offres, nouveautés et promotions exclusives. Que dois-je faire ?
+          answer:
+            - Abonnez-vous à notre newsletter ! Vous recevrez par courriel toutes les informations concernant les dernières nouveautés ainsi que des promotions exclusives.
 
 
   creator:

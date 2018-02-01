@@ -1,6 +1,6 @@
 <div id="faq">
-  <h2>Questions Frequements Posées</h2>
-  <% t('about.faq').each_with_index do |q, i| %>
+  <h2><%= t('about.faq.name') %></h2>
+  <% t('about.faq.description').each_with_index do |q, i| %>
     <div class="question <%= i == 0 ? "more" : "less" %>">
       <h3><%= q[:question] %></h3>
       <% q[:answer].each do |a| %>

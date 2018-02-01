@@ -91,7 +91,6 @@ configure :build do
   activate :minify_javascript
   activate :imageoptim
   activate :gzip
-  activate :critical
 
   # SEO
   activate :sitemap, :gzip => false, :hostname => config[:host]

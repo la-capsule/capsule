@@ -20,30 +20,27 @@ about:
       name: Joshua Richard
       role: Graphiste
       socials:
-        facebook: '#'
-        twitter: '#'
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/joshua-richard-12b9a4129/'
+        instagram: 'https://www.instagram.com/kroustybat/'
     -
       slug: emeline
       name: Emeline Bailleul
       role: Relations créateurs
       socials:
-        facebook: '#'
-        twitter: '#'
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/emeline-bailleul/'
+        site: 'https://emelinebailleul.com'
+        twitter: 'https://twitter.com/emelinebailleul'
     -
       slug: bastien
       name: Bastien Robert
       role: Développeur
       socials:
-        facebook: '#'
-        twitter: '#'
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/bastienrobert/'
+        site: 'https://bastienrobert.fr'
+        github: 'https://github.com/bastienrobert'
     -
       slug: mathias
       name: Mathias Fratani
       role: Communication
       socials:
-        facebook: '#'
-        twitter: '#'
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/feed/'

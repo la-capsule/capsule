@@ -3,21 +3,21 @@
   <div class="block creator">
     <%= image_tag "products/sample.png", class: 'below-image' %>
     <div class="details">
-      <h3>Détails</h3>
-      <% t('homepage.creator').each do |p| %>
+      <h3><%= t('homepage.informations.name') %></h3>
+      <% t('homepage.informations.description').each do |p| %>
         <p><%= p %></p>
       <% end %>
-      <%= link_to 'En savoir plus', '#', class: 'btn btn-outline btn-outline-white' %>
+      <%= link_to t('homepage.informations.button'), t('paths.creator'), class: 'btn btn-outline btn-outline-white' %>
     </div>
   </div>
   <div class="block product">
     <%= image_tag "products/sample.png", class: 'below-image' %>
     <div class="details">
-      <h3>Détails</h3>
-      <% t('homepage.creator').each do |p| %>
+      <h3><%= t('homepage.creator.name') %></h3>
+      <% t('homepage.creator.description').each do |p| %>
         <p><%= p %></p>
       <% end %>
-      <%= link_to 'En savoir plus', '#', class: 'btn btn-outline btn-outline-white' %>
+      <%= link_to t('homepage.creator.button'), t('paths.catalog'), class: 'btn btn-outline btn-outline-white' %>
     </div>
   </div>
 </div>

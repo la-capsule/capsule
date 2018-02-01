@@ -5,6 +5,7 @@ class Counter {
     if (product != null) {
       let productId = product.dataset.itemId
       let buyButton = product.querySelector('#buy-' + productId)
+      this.lastEl
       this.maxQuantity = buyButton.dataset.itemMaxQuantity
     }
     this.addEvent()
@@ -17,6 +18,7 @@ class Counter {
         buttons[j].addEventListener('click', (e) => {
           e.preventDefault()
           this.process(e.target, counter)
+          this.opacity(e.target, counter)
         })
       }
     }
@@ -29,6 +31,16 @@ class Counter {
     } else if (el.classList.contains('less') && a > 1) {
       n.innerHTML = a - 1
     }
+  }
+  opacity (el, c) {
+    c = parseInt(c.querySelector('span').innerHTML)
+    this.lastEl == null ? this.lastEl = el : false
+    if (el != this.lastEl && this.lastEl.classList.contains('max')) {
+      this.lastEl.classList.remove('max')
+    } else if (c <= 1 || c >= this.maxQuantity) {
+      el.classList.add('max')
+    }
+    this.lastEl = el
   }
 }
 

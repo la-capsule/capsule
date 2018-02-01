@@ -176,11 +176,11 @@
       inStocks:
         blue: '#26619c'
         grenat: '#ff5350'
-        white: '#FFFFFF'
+        rose: '#eea19d'
   image:
     left: products/8/b8-1.png
     face: products/8/b8-2.png
-    right: products/8/b8-2.png
+    right: products/8/b8-3.png
   en:
     name: Héloïse Necklace
     path: heloise-necklace

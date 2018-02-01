@@ -1,7 +1,8 @@
 .product-image {
   img {
     display: none;
-    width: 100%;
+    width: auto;
+    max-height: 500px;
     &.select {
       display: block;
     }

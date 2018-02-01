@@ -12,13 +12,9 @@ dynamic:
 <section id="product" data-item-id="<%= product.id %>">
 
   <div class="product-image">
-    <% if product.image.kind_of?(Array) %>
       <% product.image.each_with_index do |(alt, image), i| %>
         <%= image_tag image, alt: alt, class: (i == product.image.count / 2 ? 'select' : '') %>
       <% end %>
-    <% else %>
-      <%= image_tag product.image.face, alt: "Image", class: 'select' %>
-    <% end %>
   </div>
 
   <div class="product-details">

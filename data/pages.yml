@@ -11,9 +11,9 @@ creator:
 about:
   informations:
     images:
-      - https://unsplash.com/photos/UCZF1sXcejo/download?force=true
-      - https://unsplash.com/photos/nF8xhLMmg0c/download?force=true
-      - https://unsplash.com/photos/UCZF1sXcejo/download?force=true
+      - about/1.jpg
+      - about/2.jpg
+      - about/3.jpg
   team:
     -
       slug: joshua

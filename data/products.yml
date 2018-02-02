@@ -13,7 +13,7 @@
       inStocks:
         green: '#bfc672'
         purple: '#6f7bfb'
-        purple: '#cc7722'
+        ocre: '#cc7722'
   image:
     left: products/1/b1-2.png
     face: products/1/b1-1.png

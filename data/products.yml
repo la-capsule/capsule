@@ -47,12 +47,12 @@
     face: products/2/b2-1.png
     right: products/2/b2-3.png
   en:
-    name: Bracelet
-    path: bracelet
+    name: Heloise Bracelet
+    path: heloise-bracelet
     description: "Gold filled and semi precious stone - Handmade - No contact: water, perfume"
   fr:
-    name: Bracelet
-    path: bracelet
+    name: Bracelet Héloïse
+    path: bracelet-heloise
     description: "Plaqué or et pierre semi précieuse - Fait main - Aucun contact : eau, parfum"
 - id: 3
   price:
@@ -212,8 +212,8 @@
   en:
     name: Maroussia earrings
     path: maroussia-earrings
-    description: "Gold Plated & semiprecious stone - Handmade - No contact: water, perfume"
+    description: "Gold Plated & rhodocrosite semiprecious stone - Handmade - No contact: water, perfume"
   fr:
     name: Boucles d'oreilles Maroussia
     path: boucles-oreilles-maroussia
-    description: "Plaqué Or & pière semi-précieuses - Fait main - Aucun contact : eau, parfum"
+    description: "Plaqué Or & pière semi-précieuses rhodocrosite   - Fait main - Aucun contact : eau, parfum"

@@ -3,6 +3,19 @@
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
+    <style>
+      @keyframes two-animate {
+        0% {transform: translate(20px, 20px);}
+        50% {transform: translate(-20px, -20px);}
+        100% {transform: translate(20px, 20px);}
+      }
+      #path-3 {
+        animation: two-animate 10s infinite .5s;
+      }
+      #Path-3 {
+        animation: two-animate 12s infinite;
+      }
+    </style>
     <defs>
         <radialGradient cx="100%" cy="2.8665461%" fx="100%" fy="2.8665461%" r="136.611146%" gradientTransform="translate(1.000000,0.028665),scale(1.000000,0.832905),rotate(126.606515),translate(-1.000000,-0.028665)" id="radialGradient-1">
             <stop stop-color="#82ABF9" offset="0%"></stop>

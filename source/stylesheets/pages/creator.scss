@@ -21,7 +21,9 @@ section#creator {
       transform: translate(65%,-30%);
     }
     :last-child {
-      transform: translate(-40%, -20%);
+      position: fixed;
+      bottom: 0;
+      transform: translateX(-40%);
       z-index: -1;
     }
   }

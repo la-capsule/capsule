@@ -132,7 +132,7 @@ GEM
       middleman-core (>= 3.2)
     middleman-robots (1.3.0)
       middleman (>= 4.0)
-    middleman-transpath (0.0.2)
+    middleman-transpath (0.0.4)
       middleman-core (>= 4.2.1)
     minitest (5.10.3)
     padrino-helpers (0.13.3.4)
@@ -181,7 +181,7 @@ DEPENDENCIES
   middleman-robots (= 1.3.0)
   middleman-scss-lint!
   middleman-sitemap!
-  middleman-transpath (~> 0.0.2)
+  middleman-transpath (~> 0.0.4)
   scss_lint
   tzinfo-data
   wdm (~> 0.1)

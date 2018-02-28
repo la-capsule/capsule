@@ -7,7 +7,7 @@ gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-dotenv', '~> 2.0'
 gem 'middleman-livereload'
-gem 'middleman-transpath', '~>0.0.2'
+gem 'middleman-transpath', '~>0.0.4'
 
 # Assets
 gem 'middleman-minify-html'

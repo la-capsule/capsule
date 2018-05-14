@@ -31,16 +31,16 @@ en:
 
   footer:
     -
-      terms: "Termes et conditions"
-      order: "Suivie de commande"
-      faq: "F.A.Q."
+      "termes-et-conditions": "Termes et conditions"
+      "commande": "Suivie de commande"
+      "a-propos#faq": "F.A.Q."
     -
-      be-creator: "Postuler en tant que créateur"
-      contact: "Contact"
+      "mailto:contact@capsule-bordeaux.fr?subject=Postuler": "Postuler en tant que créateur"
+      "mailto:contact@capsule-bordeaux.fr": "Contact"
     -
-      instagram: "instagram"
-      twitter: "twitter"
-      facebook: "facebook"
+      "https://www.instagram.com/capsulebordeaux/": "instagram"
+      "https://twitter.com/CapsuleBordeaux": "twitter"
+      "https://www.facebook.com/capsulebordeaux": "facebook"
 
   ## ------------------
   # Page translations

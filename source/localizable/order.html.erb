@@ -8,7 +8,7 @@ slug: order
 
     <% form_tag 'http://capsule-admin.herokuapp.com/orders/', id: 'follow-order-form' do %>
       <%= label_tag :id, caption: 'Numéro de commande' %>
-      <%= text_field_tag :id, placeholder: 'CAPS-####' %>
+      <%= text_field_tag :id, placeholder: 'CAPS####', type: "text" %>
       <%= submit_tag 'Suivre', class: 'btn btn-main' %>
     <% end %>
   </div>

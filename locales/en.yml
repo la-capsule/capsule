@@ -31,11 +31,11 @@ en:
 
   footer:
     -
-      "termes-et-conditions": "Termes et conditions"
-      "commande": "Suivie de commande"
-      "a-propos#faq": "F.A.Q."
+      "#": "Terms and conditions"
+      "commande": "Order following"
+      "a-propos#faq": "Q&A"
     -
-      "mailto:contact@capsule-bordeaux.fr?subject=Postuler": "Postuler en tant que créateur"
+      "mailto:contact@capsule-bordeaux.fr?subject=Postuler": "Be a creator"
       "mailto:contact@capsule-bordeaux.fr": "Contact"
     -
       "https://www.instagram.com/capsulebordeaux/": "instagram"
